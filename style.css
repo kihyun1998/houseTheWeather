@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+}
+body{
+    background-color: white;
+}
+#weather{
+    margin: 10px auto;
+    width: 40%;
+    max-width: 400px;
+    text-align: center;
+    font-weight: 800;
+    color: rgb(0, 0, 0);
+    border-radius: 10px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+} 
+#weather :nth-child(1){
+    font-size: 1.5em;
+}
+#weather :nth-child(2){
+    font-size: 1em;
+}
+#menu{
+    margin: 3em auto;
+    max-width: 1200px;
+    border: 3px solid black;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-between;
+    height: 50em;
+}
+#menu div{
+    border: 3px solid black;
+    width: 40%;
+    height: 40%;
+    margin: 0;
+    box-shadow: 3px 3px 10px rgb(46, 46, 255);
+}
+
+#menu .one{
+    background-color: red;
+    font-size: 1em;
+    text-align: center;
+}
+#menu .two{
+    background-color: green;
+    font-size: 1em;
+    text-align: center;
+}
+#menu .three{
+    background-color: purple;
+    font-size: 1em;
+    text-align: center;
+}
+#menu .four{
+    background-color: yellow;
+    font-size: 1em;
+    text-align: center;
+}
