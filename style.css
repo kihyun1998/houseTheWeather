@@ -1,61 +1,80 @@
+/*웹 폰트 사용*/
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital@1&display=swap');
 *{
     margin: 0;
+    font-family: 'Raleway', sans-serif;
 }
 body{
-    background-color: white;
+    background-color: rgb(255, 255, 255);
 }
-#weather{
-    margin: 10px auto;
-    width: 40%;
-    max-width: 400px;
-    text-align: center;
+#head{
+    margin: 0.5em auto;
     font-weight: 800;
-    color: rgb(0, 0, 0);
-    border-radius: 10px;
-    font-family:Georgia, 'Times New Roman', Times, serif;
-} 
-#weather :nth-child(1){
-    font-size: 1.5em;
+    max-width: 40em;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    /*border-radius: 42% 58% 50% 50% / 27% 78% 22% 73%  ;
+    border-color: rgb(255, 255, 255);
+    border-width: 4px;
+    border-style: solid;
+    background: linear-gradient(45deg, Violet,rgb(155, 164, 248));*/
 }
-#weather :nth-child(2){
-    font-size: 1em;
+.location{
+    font-size: 2em;
 }
+.temp{
+    font-size: 9em;
+}
+.weather{
+    font-size: 4em;
+}
+.date{
+    margin: 0.5em auto;
+    text-align: right;
+    max-width: 35em;
+    font-weight: 800;
+    font-size: 2em;
+}
+
+
+
+
 #menu{
     margin: 3em auto;
     max-width: 1200px;
-    border: 3px solid black;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
-    align-content: space-between;
+    align-content: space-around;
     height: 50em;
 }
+
 #menu div{
-    border: 3px solid black;
     width: 40%;
     height: 40%;
     margin: 0;
-    box-shadow: 3px 3px 10px rgb(46, 46, 255);
+    box-shadow: 5px 5px 10px rgb(202, 64, 64);
 }
 
 #menu .one{
-    background-color: red;
+    background-color: rgba(246, 251, 255, 0.404);
     font-size: 1em;
     text-align: center;
 }
 #menu .two{
-    background-color: green;
+    background-color: rgba(255, 124, 115, 0.404);
     font-size: 1em;
     text-align: center;
 }
 #menu .three{
-    background-color: purple;
+    background-color: rgba(218, 255, 230, 0.404);
     font-size: 1em;
     text-align: center;
 }
 #menu .four{
-    background-color: yellow;
+    background-color: rgba(255, 255, 255, 0.404);
     font-size: 1em;
     text-align: center;
 }
