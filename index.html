@@ -9,29 +9,40 @@
 </head>
 <body>
     <header id="head">
-        <div class="location"></div>
+        <div class="gps">
+            <img src="./image/premium-icon-gps-4120467.png" alt="gps" width="7%">
+            <div class="location"></div>
+        </div>
+        
         <div class="temp"></div>
         <div class="weather"></div>
     </header>
-    <div class="date">
+    <div id="middle">
+        <div class="date"></div>
     </div>
-    <main id="main">
 
+
+    <main id="main">
+        <div class="sun">
+            <div class="sunText">
+                <div>Sunrise</div>
+                <div>Sunset</div>
+            </div>
+            <div class="sunimg">
+                <img src="./image/sunrise.png" alt="sunrise" width="20%">
+                <img src="./image/sunset.png" alt="sunset" width="20%">
+            </div>
+            <div class="suntime">
+                <div class="rise"></div>
+                <div class="set"></div>
+            </div>
+        </div>
     </main>
-    <div id="menu">
-        <div class="one">
-            <h2>PROCESSING</h2>
-        </div>
-        <div class="two">
-            <h2>PROCESSING</h2>
-        </div>
-        <div class="three">
-            <h2>PROCESSING</h2>
-        </div>
-        <div class="four">
-            <h2>PROCESSING</h2>
-        </div>
-    </div>
+    
+    
+    <nav id="menu">
+
+    </nav>
     
     <script src="./javascript/geo.js"></script>
     <script src="./javascript/data.js"></script>

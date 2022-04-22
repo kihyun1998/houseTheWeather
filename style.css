@@ -1,24 +1,25 @@
 /*웹 폰트 사용*/
-@import url('https://fonts.googleapis.com/css2?family=Raleway:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;500&family=Raleway:ital@1&display=swap');
 *{
     margin: 0;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Mulish', sans-serif;
 }
 body{
     background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
 }
 #head{
     margin: 0.5em auto;
-    font-weight: 800;
+    font-weight: 500;
     max-width: 40em;
     text-align: center;
     display: flex;
     flex-direction: column;
-    /*border-radius: 42% 58% 50% 50% / 27% 78% 22% 73%  ;
-    border-color: rgb(255, 255, 255);
-    border-width: 4px;
-    border-style: solid;
-    background: linear-gradient(45deg, Violet,rgb(155, 164, 248));*/
+}
+.gps{
+    display: flex;
+    justify-content: center;
 }
 .location{
     font-size: 2em;
@@ -29,52 +30,49 @@ body{
 .weather{
     font-size: 4em;
 }
-.date{
+#middle{
     margin: 0.5em auto;
-    text-align: right;
-    max-width: 35em;
-    font-weight: 800;
-    font-size: 2em;
-}
-
-
-
-
-#menu{
-    margin: 3em auto;
-    max-width: 1200px;
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    width: 29em;
+    font-weight: 800;
+    font-size: 1em;
+    justify-content: flex-end;
+}
+#main{
+    margin: 0.5em auto;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    height: 100em;
+    width: 55em;
+}
+.sun{
+    margin: 0.5em auto;
+    width: 85%;
+    display: flex;
+    font-weight: 500;
+    flex-direction: column;
+    border-radius: 10px;
+    background-color: rgb(230, 244, 248);
+}
+
+.suntime{
+    display:flex;
+    width: 100%;
+    font-size: 1.5em;
+    font-weight: 500;
     justify-content: space-around;
-    align-content: space-around;
-    height: 50em;
+}
+.sunimg{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+.sunText{
+    display: flex;
+    width: 100%;
+    font-size: 1.5em;
+    justify-content: space-around;
 }
 
-#menu div{
-    width: 40%;
-    height: 40%;
-    margin: 0;
-    box-shadow: 5px 5px 10px rgb(202, 64, 64);
-}
 
-#menu .one{
-    background-color: rgba(246, 251, 255, 0.404);
-    font-size: 1em;
-    text-align: center;
-}
-#menu .two{
-    background-color: rgba(255, 124, 115, 0.404);
-    font-size: 1em;
-    text-align: center;
-}
-#menu .three{
-    background-color: rgba(218, 255, 230, 0.404);
-    font-size: 1em;
-    text-align: center;
-}
-#menu .four{
-    background-color: rgba(255, 255, 255, 0.404);
-    font-size: 1em;
-    text-align: center;
-}

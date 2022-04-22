@@ -22,8 +22,4 @@ for(var j=0; j<dayarr.length; j++){
 }
 
 const date1 = document.querySelector(".date");
-date1.innerText = `Today is ${dayEn} ${monEn} ${date} ${year}`;
-
-
-console.log(monEn,monarr);
-console.log("출력",year,monEn,date,dayEn);
+date1.innerText = `${dayEn} ${monEn} ${date} ${year}`;

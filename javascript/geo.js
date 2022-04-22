@@ -5,16 +5,16 @@ function background(status){
             return "rgb(193, 232, 255)";
             break;
         case "Clouds":
-            return "rgb(216, 218, 219)";
+            return "rgb(203, 219, 230)";
             break;
         case "Rain":
-            return "rgb(30, 163, 240)";
+            return "rgb(181, 188, 192)";
             break;
         case "Snow":
-            return "rgb(235, 248, 255)";
+            return "rgb(255, 255, 255)";
             break;
         case "Thunderstorm":
-            return "rgb(216, 168, 238)";
+            return "rgb(207, 187, 212)";
             break;
         case "Drizzle":
             return "rgb(187, 247, 202)";
@@ -25,6 +25,14 @@ function background(status){
     }
 }
 
+function timeSet(time){
+    let date = new Date(time*1000);
+    let day = date.getHours()+":"+date.getMinutes();
+
+    return day;
+}
+
+
 const API_KEY ="5711ab3e8bcded1dd3e2a22ecce09053"
 
 //좌표값 입력으로 작동되는 함수
@@ -33,24 +41,32 @@ function onGeoYes(position){
     const lon= position.coords.longitude;
 
     //날씨 API
-    const urlWeather = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${API_KEY}&units=metric`
+    const urlWeather = `https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${lon}&appid=${API_KEY}&units=metric`
     fetch(urlWeather)
     .then(response => response.json())
     .then(data => {
         //온도지정
         const temp = document.querySelector(".temp");
-        const weatherName = data.weather[0].main
-        temp.innerText = `${data.main.temp}°C`;
+        const weatherName = data.current.weather[0].main
+        temp.innerText = `${data.current.temp}°C`;
         
         //날씨 설명
         const weather = document.querySelector(".weather");
-        weather.innerText = `${data.weather[0].description}`
+        weather.innerText = `${data.current.weather[0].description}`
 
         //날씨에 따른 배경색 지정
         const color = background(weatherName)
         document.body.style.backgroundColor=`${color}`;
 
-        //const url2= `https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${lon}&exclude=alerts&appid=${API_KEY}&units=metric`
+        //일출
+        const rise=document.querySelector(".rise");
+        let dayRise = timeSet(data.current.sunrise);
+        rise.innerText = `${dayRise}`;
+
+        //일몰
+        const set=document.querySelector(".set");
+        let daySet = timeSet(data.current.sunset);
+        set.innerText = `${daySet}`
     })
 
     //지역이름 API
