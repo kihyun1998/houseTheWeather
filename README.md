@@ -9,3 +9,7 @@ v0.9.1 Add background-colors to suit the weather.
 
 v0.9.2 Change layout,font and font size
        Add Date value.
+
+v0.9.3 Add Weather Icons.
+       Add Sunrise and Sunset.
+       Change layout.
