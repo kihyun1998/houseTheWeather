@@ -13,3 +13,6 @@ v0.9.2 Change layout,font and font size
 v0.9.3 Add Weather Icons.
        Add Sunrise and Sunset.
        Change layout.
+
+v0.9.4 Add temperature to Chart Js
+       Add UV Index, Wind, Humidity

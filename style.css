@@ -1,5 +1,6 @@
 /*웹 폰트 사용*/
 @import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;500&family=Raleway:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gothic+A1&family=Hahmlet&display=swap');
 *{
     margin: 0;
     font-family: 'Mulish', sans-serif;
@@ -9,6 +10,8 @@ body{
     display: flex;
     flex-direction: column;
 }
+
+
 #head{
     margin: 0.5em auto;
     font-weight: 500;
@@ -17,6 +20,7 @@ body{
     display: flex;
     flex-direction: column;
 }
+
 .gps{
     display: flex;
     justify-content: flex-end;
@@ -24,8 +28,9 @@ body{
 .location{
     padding-top: 0.3em;
     font-size: 1.5em;
-    font-style: italic;
+    font-family: 'Gothic A1', sans-serif;
 }
+
 .weather{
     margin: 0.5em auto;
     display: flex;
@@ -45,7 +50,7 @@ body{
     height: 100%;
 }
 .temp{
-    font-size: 8em;
+    font-size: 7em;
     font-style: italic;
 }
 .weatherName{
@@ -62,40 +67,57 @@ body{
     font-size: 1.5em;
     justify-content: flex-end;
 }
+
+
 #main{
     margin: 0.5em auto;
     display: flex;
     flex-direction: column;
     height: 100em;
     width: 55em;
+    border: 1px solid black;
 }
-.sun{
-    margin: 0.5em auto;
-    width: 85%;
+.Frame{
+    margin: 1em auto;
+    width: 90%;
     display: flex;
     font-weight: 500;
     flex-direction: column;
     border-radius: 10px;
     background-color: rgb(230, 244, 248);
 }
-
-.suntime{
+.text{
     display:flex;
-    width: 100%;
-    font-size: 1.5em;
-    font-weight: 500;
-    justify-content: space-around;
-}
-.sunimg{
-    display: flex;
-    justify-content: space-around;
-    width: 100%;
-}
-.sunText{
-    display: flex;
-    width: 100%;
     font-size: 1.5em;
     justify-content: space-around;
+    text-align: center;
 }
+
+
+.chartSet{
+    overflow-x: scroll;
+}
+.chartSet::-webkit-scrollbar{
+    width: 0.9em;
+}
+.chartSet::-webkit-scrollbar-thumb{
+    background-color: #94B6EA;
+    border-radius: 10px;
+    background-clip: padding-box;
+    border: 2px solid transparent;
+}
+.chartSet::-webkit-scrollbar-track{
+    background-color: #E0DAFC;
+    border-radius: 10px;
+    box-shadow: inset 0px 0px 3px #C4B0E3;
+}
+
+
+.img{
+    display: flex;
+    justify-content: space-around;
+}
+
+
 
 

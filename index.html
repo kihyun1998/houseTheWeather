@@ -28,18 +28,43 @@
     </header>
     
     <main id="main">
-        <div class="sun">
-            <div class="sunText">
+        <div class="chart Frame">
+            <div class="text">Temperature</div>
+            <div class="chartSet">
+                    <canvas id="myChart" width="3000vw" height="200vh"></canvas>
+            </div>
+        </div>
+        
+        <div class="sun Frame">
+            <div class="text">
                 <div>Sunrise</div>
                 <div>Sunset</div>
             </div>
-            <div class="sunimg">
+            <div class="sun img">
                 <img src="./image/sunrise.png" alt="sunrise" width="20%">
                 <img src="./image/sunset.png" alt="sunset" width="20%">
             </div>
-            <div class="suntime">
+            <div class="text">
                 <div class="rise"></div>
                 <div class="set"></div>
+            </div>
+        </div>
+
+        <div class="etc Frame">
+            <div class="text">
+                <div>UV Index</div>
+                <div>Wind</div>
+                <div>Humidity</div>
+            </div>
+            <div class="etc img">
+                <img src="./image/sunscreen.png" alt="UV Index" width="20%">
+                <img src="./image/wind.png" alt="Wind" width="20%">
+                <img src="./image/humidity.png" alt="Humidity" width="20%">
+            </div>
+            <div class="text">
+                <div class="uv"></div>
+                <div class="wind"></div>
+                <div class="humidity"></div>
             </div>
         </div>
     </main>
@@ -49,6 +74,9 @@
 
     </nav>
     
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.5.1/dist/chart.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chartjs-plugin-datalabels/2.0.0/chartjs-plugin-datalabels.min.js"></script>
     <script src="./javascript/geo.js"></script>
     <script src="./javascript/data.js"></script>
 </body>
