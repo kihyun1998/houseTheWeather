@@ -1,9 +1,9 @@
 /*웹 폰트 사용*/
-@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;500&family=Raleway:ital@1&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Gothic+A1&family=Hahmlet&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Nanum+Pen+Script&family=Oleo+Script+Swash+Caps&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Indie+Flower&family=Mali&display=swap');
 *{
     margin: 0;
-    font-family: 'Mulish', sans-serif;
+    font-family: 'Mali', cursive;
 }
 body{
     background-color: rgb(255, 255, 255);
@@ -27,8 +27,8 @@ body{
 }
 .location{
     padding-top: 0.3em;
-    font-size: 1.5em;
-    font-family: 'Gothic A1', sans-serif;
+    font-size: 2em;
+    font-family: 'Nanum Pen Script', cursive;
 }
 
 .weather{
@@ -68,14 +68,32 @@ body{
     justify-content: flex-end;
 }
 
+#menu{
+    margin: 0.5em auto;
+    background-color: rgb(62, 208, 249);
+    width: 55em;
+    border-radius: 10px;
+}
+#menu > .text > div{
+    transition: background-color 0.4s;
+}
+#menu > .text > div:hover{
+    background-color: rgb(151, 226, 246);
+    border-radius: 10px;
+}
+#menu > .text > div:active{
+    background-color:rgb(44, 151, 181);
+}
 
-#main{
+
+
+#mainIndex{
     margin: 0.5em auto;
     display: flex;
     flex-direction: column;
     height: 100em;
     width: 55em;
-    border: 1px solid black;
+    border: 1px solid red;
 }
 .Frame{
     margin: 1em auto;
@@ -92,6 +110,17 @@ body{
     justify-content: space-around;
     text-align: center;
 }
+.text > div{
+    width: 23%;
+}
+.img{
+    display: flex;
+    justify-content: space-around;
+}
+
+a{
+    text-decoration: none;
+}
 
 
 .chartSet{
@@ -101,21 +130,35 @@ body{
     width: 0.9em;
 }
 .chartSet::-webkit-scrollbar-thumb{
-    background-color: #94B6EA;
+    background-color: rgb(207, 238, 246);
     border-radius: 10px;
     background-clip: padding-box;
     border: 2px solid transparent;
 }
+.chartSet::-webkit-scrollbar-thumb:hover{
+    background-color: rgba(240, 248, 250, 0.667);
+}
+.chartSet::-webkit-scrollbar-thumb:active{
+    background-color:rgba(45, 251, 251, 0.641);
+}
 .chartSet::-webkit-scrollbar-track{
-    background-color: #E0DAFC;
+    background-color: rgb(230, 244, 248);
     border-radius: 10px;
-    box-shadow: inset 0px 0px 3px #C4B0E3;
 }
 
 
-.img{
+#mainWarning{
+    margin: 0.5em auto;
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
+    height: 70em;
+    width: 55em;
+    border: 1px solid red;
+}
+button{
+    width: 30%;
+    height: 20%;
 }
 
 

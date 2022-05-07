@@ -27,9 +27,25 @@
         </div>
     </header>
     
-    <main id="main">
+    <nav id="menu">
+        <div class="text">
+            <div>
+                <a href="./index.html">Home</a>
+            </div>
+            <div>
+                <a href="./warning.html">Warning</a>
+            </div>
+            <div>%Processing%</div>
+        </div>
+    </nav>
+
+    <main id="mainIndex">
         <div class="chart Frame">
-            <div class="text">Temperature</div>
+            <div class="text">
+                <div>
+                    Temperature
+                </div> 
+            </div>
             <div class="chartSet">
                     <canvas id="myChart" width="3000vw" height="200vh"></canvas>
             </div>
@@ -70,14 +86,12 @@
     </main>
     
     
-    <nav id="menu">
 
-    </nav>
     
 
     <script src="https://cdn.jsdelivr.net/npm/chart.js@3.5.1/dist/chart.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/chartjs-plugin-datalabels/2.0.0/chartjs-plugin-datalabels.min.js"></script>
     <script src="./javascript/geo.js"></script>
-    <script src="./javascript/data.js"></script>
+    <script src="./javascript/date.js"></script>
 </body>
 </html>
