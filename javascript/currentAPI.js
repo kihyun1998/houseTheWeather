@@ -1,4 +1,4 @@
-function apiSpRpt(lat,lon){
+function apiCrt(lat,lon){
     const API_KEY ="5711ab3e8bcded1dd3e2a22ecce09053";
     //날씨 API
     const urlWeather = `https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${lon}&appid=${API_KEY}&units=metric`
@@ -25,5 +25,9 @@ function apiSpRpt(lat,lon){
 
         ///////////////////////////////Head area//////////////////////////////////////
     
+        //풍속
+        const wind=document.getElementsByClassName('wind')[0];
+        wind.innerText = `${data.current.wind_speed} m/s`;
+
     })
 }

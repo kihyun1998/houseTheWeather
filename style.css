@@ -1,6 +1,7 @@
 /*웹 폰트 사용*/
 @import url('https://fonts.googleapis.com/css2?family=Dongle&family=Gothic+A1&family=Hahmlet&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Indie+Flower&family=Mali&display=swap');
+/*전체설정*/
 *{
     margin: 0;
     font-family: 'Mali', cursive;
@@ -11,7 +12,7 @@ body{
     flex-direction: column;
 }
 
-
+/*header부분*/
 #head{
     margin: 0.5em auto;
     font-weight: 500;
@@ -20,7 +21,6 @@ body{
     display: flex;
     flex-direction: column;
 }
-
 .gps{
     display: flex;
     justify-content: flex-end;
@@ -34,35 +34,39 @@ body{
     font-size: 2.2em;
     font-family: 'Dongle', sans-serif;
 }
-
 .weather{
     margin: 0.5em auto;
     display: flex;
     width: 99%;
     justify-content: space-between;
 }
+/*날씨 컨테이너*/
 .weatherText{
     display: flex;
     flex-direction: column;
     justify-content: center;
     width: 48%;
 }
+/*날씨 아이콘*/
 .weatherImage{
     display: flex;
     justify-content: center;
     width: 48%;
     height: 100%;
 }
+/*날씨 아이템(온도)*/
 .temp{
     font-size: 7em;
     font-style: italic;
 }
+/*날씨 아이템(이름)*/
 .weatherName{
     font-size: 3.5em;
     text-align: left;
     padding-left: 0.5em;
     width: 20em;
 }
+/*날짜*/
 .date{
     margin: 0.5em auto;
     display: flex;
@@ -72,6 +76,7 @@ body{
     justify-content: flex-end;
 }
 
+/*메뉴부분*/
 #menu{
     margin: 0.5em auto;
     background-color: rgb(62, 208, 249);
@@ -79,6 +84,7 @@ body{
     border-radius: 10px;
     z-index: 2;
 }
+/*메인베뉴 설정*/
 .mainMenu{
     padding: 0;
     display:flex;
@@ -88,25 +94,49 @@ body{
     text-align: center;
     height: 1.3em;
 }   
-.mainMenu > li{
+.home{
     transition: background-color 0.4s;
     width: 30%;
+    border-radius: 10px
 }
-.mainMenu > li:hover{
+.spRpt{
+    transition: background-color 0.4s;
+    width: 30%;
+    border-radius: 10px 10px 0px 0px; 
+}
+.week{
+    transition: background-color 0.4s;
+    width: 30%;
+    border-radius: 10px
+}
+.home:hover{
+    background-color: rgb(151, 226, 246);
+    border-radius: 10px
+}
+.home:active{
+    background-color:rgb(44, 151, 181);
+}
+.spRpt:hover{
     background-color: rgb(151, 226, 246);
     border-radius: 10px 10px 0px 0px; 
 }
-.mainMenu > li:active{
+.spRpt:active{
     background-color:rgb(44, 151, 181);
 }
-ul{
-    list-style: none;
-}
-
-.mainMenu > li:hover .subMenu{
+.spRpt:hover .subMenu{
     opacity: 1;
     visibility: visible;
 }
+.week:hover{
+    background-color: rgb(151, 226, 246);
+    border-radius: 10px
+}
+.week:active{
+    background-color:rgb(44, 151, 181);
+}
+
+
+/*서브메뉴 설정*/
 .subMenu{
     display: flex;
     flex-direction: column;
@@ -125,6 +155,46 @@ ul{
     border-radius: 0px 0px 10px 10px;
 
 }
+.crt{
+    transition: background-color 0.4s;
+}
+.anr{
+    transition: background-color 0.4s;
+}
+
+.crt:hover{
+    background-color: rgb(71, 107, 117);
+    
+}
+.crt:active{
+    background-color:rgb(44, 38, 102);
+}
+.anr:hover{
+    background-color: rgb(71, 107, 117);
+    border-radius: 0px 0px 10px 10px;
+    
+}
+.anr:active{
+    background-color:rgb(44, 38, 102);
+}
+
+
+/*리스트와 a태그 값 설정*/
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+a:link{
+    color: black;
+}
+a:visited{
+    color: black;
+}
+
+
+
 
 
 #mainIndex{
@@ -155,15 +225,7 @@ ul{
     display: flex;
     justify-content: space-around;
 }
-a{
-    text-decoration: none;
-}
-a:link{
-    color: black;
-}
-a:visited{
-    color: black;
-}
+
 
 
 .chartSet{
@@ -207,7 +269,6 @@ a:visited{
     height: 5%;
     font-size: 2em;
     border-radius: 10px;
-    background-color:rgb(133, 109, 240);
 }
 .cnt{
     margin: 0.5em auto;
@@ -218,8 +279,8 @@ a:visited{
     height: 30%;
     border-radius: 14px;
     color: whitesmoke;
-    border: 0.3em solid burlywood;
-    background-color: rgb(16, 87, 48);
+    border: 0.3em solid rgb(255, 246, 166);
+    background-color: rgb(65, 108, 217);
 }
 
 

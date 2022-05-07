@@ -24,7 +24,7 @@ function apiHome(lat,lon){
         let icon = getIcon(weatherName);
         weatherIcon.src = icon;
 
-        /////////////////////////////////////////////////////////////////////
+        ///////////////////////////////Head area//////////////////////////////////////
 
         //일출
         const rise=document.getElementsByClassName("rise")[0];

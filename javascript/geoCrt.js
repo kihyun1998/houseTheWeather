@@ -3,7 +3,7 @@ function onGeoYes(position){
     let lon= position.coords.longitude;
     
     apiLoc(lat,lon);
-    apiSpRpt(lat,lon);
+    apiCrt(lat,lon);
 }   
 //좌표값 오류 시 보내는 메시지
 function onGeoNo(){
