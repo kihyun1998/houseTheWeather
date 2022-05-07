@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=100%, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header id="head">
+        <div class="gps">
+            <img src="./image/premium-icon-gps-4120467.png" alt="gps" width="5%">
+            <div class="location"></div>
+        </div>
+        <div class="weather">
+            <div class="weatherImage">
+                <img class="weatherIcon" src="" width="100%">
+            </div>
+            <div class="weatherText">
+                <div class="temp"></div>
+                <div class="weatherName"></div>
+            </div>
+        </div>
+        <div class="date">
+            <div class="dateText"></div>
+        </div>
+    </header>
+    
+    <nav id="menu">
+        <ul class="mainMenu">
+            <li>
+                <a href="./index.html">Home</a>
+            </li>
+            <li>
+                <a href="./specialReport.html">Special Report</a>
+                <ul class="subMenu">
+                    <li>
+                        Current location
+                    </li>
+                    <li>
+                        Another location
+                    </li>
+                </ul>
+            </li>
+            <li>
+                %Processing%
+            </li>
+        </ul>
+    </nav>
+
+    <main id="mainInfo">
+        <div class="des">
+            Weather Special Report
+        </div>
+        <div class="cnt">
+            <br>There is no weather special report!
+        </div>
+    </main>
+    <script src="./javascript/uvIndex.js"></script>
+    <script src="./javascript/icon.js"></script>
+    <script src="./javascript/time.js"></script>
+    <script src="./javascript/backgroundColor.js"></script>
+    <script src="./javascript/locationAPI.js"></script>
+    <script src="./javascript/spRptAPI.js"></script>
+    <script src="./javascript/geoSpRpt.js"></script>
+    <script src="./javascript/date.js"></script>
+</body>
+</html>
