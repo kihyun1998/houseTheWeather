@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=100%, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./style/public.css">
+    <title>House The Weather</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.5.1/dist/chart.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chartjs-plugin-datalabels/2.0.0/chartjs-plugin-datalabels.min.js"></script>
+
+</head>
+<body>
+    <div id="FRAME">
+        <nav id="nav">
+            <div class="logo">
+                <a href="./index.html">House The Weather</a>
+            </div>
+            <div class="menu">
+                <ul class="mainMenu">
+                    <li class="home">
+                        <a href="./home.html">Home</a>
+                    </li>
+                    <li class="spRpt">
+                        <a class="spH" href="./specialReport.html">Special Report</a> 
+                        <ul class="subMenu">
+                            <li class="crt">
+                                <a href="./current.html">Current location</a>
+                            </li>
+                            <li class="anr">
+                                <a href="./another.html">Another location</a>
+                            </li>
+                        </ul>
+                    </li>    
+                    <li class="week">
+                        week
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <header id="head">
+            <div class="space"></div>
+            <div class="gps">
+                <img src="./image/premium-icon-gps-4120467.png" alt="gps" height="30%">
+                <div class="location"></div>
+            </div>
+            <div class="weather">
+                <div class="weatherImage">
+                    <img class="weatherIcon" src="" width="100%">
+                </div>
+                <div class="weatherText">
+                    <div class="temp"></div>
+                    <div class="weatherName"></div>
+                </div>
+            </div>
+            <div class="date">
+                <div class="dateText"></div>
+            </div>
+        </header>
+    
+        <main id="mainIndex">
+            <div class="chart FrameI">
+                <div class="text">
+                    <div>
+                        Temperature
+                    </div> 
+                </div>
+                <div class="chartSet">
+                        <canvas id="myChart" width="3000vw" height="200vh"></canvas>
+                </div>
+            </div>
+            
+            <article class="rain FrameI">
+                <div class="text">
+                    <div>
+                        Rainfall
+                    </div> 
+                </div>
+                <div class="chartSet">
+                        <canvas id="myChart2" width="3000vw" height="200vh"></canvas>
+                </div>
+            </article>
+    
+            <div class="sun FrameI">
+                <div class="text">
+                    <div>
+                        Sunrise
+                    </div>
+                    <div>
+                        Sunset
+                    </div>
+                </div>
+                <div class="sun img">
+                    <img src="./image/sunrise.png" alt="sunrise" width="15%">
+                    <img src="./image/sunset.png" alt="sunset" width="15%">
+                </div>
+                <div class="text">
+                    <p class="rise"></p>
+                    <p class="set"></p>
+                </div>
+            </div>
+    
+            <article class="etc FrameI">
+                <div class="text">
+                    <div>
+                        UV Index
+                    </div>
+                    <div>
+                        Wind
+                    </div>
+                    <div>
+                        Humidity
+                    </div>
+                </div>
+                <div class="etc img">
+                    <img src="./image/sunscreen.png" alt="UV Index" width="15%">
+                    <img src="./image/wind.png" alt="Wind" width="15%">
+                    <img src="./image/humidity.png" alt="Humidity" width="15%">
+                </div>
+                <div class="text">
+                    <p class="uv"></p>
+                    <p class="wind"></p>
+                    <p class="humidity"></p>
+                </div>
+            </article>
+    
+            <article class="air FrameI">
+                <div class="text">
+                    <div>Fine dust</div>
+                    <div>Ultra-fine dust</div>
+                    <div>Ozone</div>
+                </div>
+                <div class="air img">
+                    <img class="fdIcon" src="" width="10%">
+                    <img class="ufdIcon" src="" width="10%">
+                    <img class="ozIcon" src="" width="10%">
+                </div>
+                <div class="text">
+                    <p class="fdLevel"></p>
+                    <p class="ufdLevel"></p>
+                    <p class="ozLevel"></p>
+                </div>
+                <div class="text">
+                    <p class="fDust"></p>
+                    <p class="uFDust"></p>
+                    <p class="ozone"></p>
+                </div>
+            </article>
+        </main>
+    </div>
+    
+
+    <script src="./javascript/airAPI.js"></script>
+    <script src="./javascript/backImg.js"></script>
+    <script src="./javascript/uvIndex.js"></script>
+    <script src="./javascript/icon.js"></script>
+    <script src="./javascript/date.js"></script>
+    <script src="./javascript/backgroundColor.js"></script>
+    <script src="./javascript/locationAPI.js"></script>
+    <script src="./javascript/homeAPI.js"></script>
+    <script src="./javascript/geoHome.js"></script>
+    
+    
+</body>
+</html>

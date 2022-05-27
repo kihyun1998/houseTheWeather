@@ -2,10 +2,10 @@
 function background(status){
     switch(status){
         case "Clear":
-            return "rgb(193, 232, 255)";
+            return "rgb(67, 214, 255)";
             break;
         case "Clouds":
-            return "rgb(203, 219, 230)";
+            return "rgb(207, 234, 247)";
             break;
         case "Rain":
             return "rgb(181, 188, 192)";

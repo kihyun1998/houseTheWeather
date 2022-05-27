@@ -1,16 +1,13 @@
-function onGeoYes(position){
-    let lat= position.coords.latitude;
-    let lon= position.coords.longitude;
-    
-    apiLoc(lat,lon);
-    apiHome(lat,lon);
-}   
-//좌표값 오류 시 보내는 메시지
-function onGeoNo(){
-    alert("I'm sorry! We can't find you.");
-}
+let lat = window.localStorage.getItem('lat');
+let lon = window.localStorage.getItem('lon');
 
-//현재 위치 좌표값 가져오기
-navigator.geolocation.getCurrentPosition(onGeoYes,onGeoNo);
+apiAir(lat,lon);
+apiLoc(lat,lon);
+apiHome(lat,lon);
+
+setDate("dateText");
+
+
+
 
 

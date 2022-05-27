@@ -1,0 +1,186 @@
+/*웹 폰트 사용*/
+@import url('https://fonts.googleapis.com/css2?family=Coiny&family=Dongle&family=Gothic+A1&family=Hahmlet&family=Montserrat+Alternates&family=Press+Start+2P&family=Source+Code+Pro:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Coiny&family=Dongle&family=Gothic+A1&family=Hahmlet&family=Montserrat+Alternates&family=Open+Sans:wght@370&family=Press+Start+2P&family=Source+Code+Pro:wght@500&display=swap');
+/*전체설정*/
+*{
+    margin: 0;
+    font-family: 'Montserrat Alternates','Open Sans', sans-serif;
+}
+body{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color:#dce4ed;
+    overflow-x: hidden;
+    background-size: cover;
+}
+#nav{
+    min-height: 3em;
+    width: 100%;
+    background-color: rgb(0, 31, 39);
+    position: fixed;
+    display: flex;
+    color: aliceblue;
+
+}
+#nav  a{
+    color: aliceblue;
+}
+
+/*메인베뉴 설정*/
+.mainMenu{
+    display:flex;
+    font-weight: 800;
+    font-size: 1.5em;
+    justify-content: space-around;
+    text-align: center;
+    height: 5vh;
+}   
+.home{
+    transition: background-color 0.4s;
+    width: 30%;
+    border-radius: 10px;
+    padding-top: 0.3em;
+}
+.spRpt{
+    transition: background-color 0.4s;
+    width: 30%;
+    border-radius: 10px 10px 0px 0px;
+    padding-top: 0.3em; 
+}
+.week{
+    transition: background-color 0.4s;
+    width: 30%;
+    border-radius: 10px;
+    padding-top: 0.3em;
+}
+.home:hover{
+    background-color: rgb(63, 67, 68);
+    border-radius: 10px
+}
+.home:active{
+    background-color:rgb(110, 214, 192);
+}
+.spRpt:hover{
+    background-color: rgb(63, 67, 68);
+    border-radius: 10px 10px 0px 0px;
+}
+.spRpt:active{
+    background-color:rgb(110, 214, 192);
+}
+.spRpt:hover > .subMenu{
+    display: flex;
+    opacity: 1;
+}
+.week:hover{
+    background-color: rgb(63, 67, 68);
+    border-radius: 10px
+}
+.week:active{
+    background-color:rgb(110, 214, 192);
+}
+
+
+/*서브메뉴 설정*/
+.subMenu{
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 0;
+    opacity: 0;
+    transition: opacity 0.4s, display 0.4s;
+    width: 100%;
+    height: 3.5em;
+    font-size: 0.8em;
+    font-weight: 400;
+    text-align: center;
+    float: left;
+    background-color:rgb(63, 67, 68);
+    opacity: 0;
+    border-radius: 0px 0px 10px 10px;
+
+}
+.crt{
+    transition: background-color 0.4s;
+}
+.anr{
+    transition: background-color 0.4s;
+}
+
+.crt:hover{
+    background-color: rgb(71, 107, 117);
+    
+}
+.crt:active{
+    background-color:rgb(110, 214, 192);
+}
+.anr:hover{
+    background-color: rgb(71, 107, 117);
+    border-radius: 0px 0px 10px 10px;
+    
+}
+.anr:active{
+    background-color:rgb(110, 214, 192);
+}
+
+
+/*리스트와 a태그 값 설정*/
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+a:link{
+    color: black;
+}
+a:visited{
+    color: black;
+}
+.logo{
+    width: 20vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo > a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 11em;
+    height: 2em;
+    font-family: 'Keania One', cursive;
+    background-color: rgb(73, 160, 73);
+    border-radius: 30px 5px 30px 5px;
+}
+.menu{
+    width: 80vw;
+}
+
+
+.date{
+    margin: 0.5em auto;
+    display: flex;
+    width: 90%;
+    font-weight: 800;
+    font-size: 1.5em;
+    justify-content: flex-end;
+}
+
+
+#footer{
+    height: 10em;
+    color: aliceblue;
+    background-color: rgb(0, 31, 39);
+    display: flex;
+    align-items: center;
+}
+.ftr-frame{
+    margin: 0 auto;
+    width: 90%;
+}
+.qna-title{
+    font-size: 2em;
+    font-weight: 700;
+}

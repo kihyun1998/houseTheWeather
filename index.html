@@ -3,121 +3,102 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=100%, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/public.css">
+    <link rel="stylesheet" href="./style/index.css">
+    <title>House The Weather</title>
 </head>
 <body>
-    <header id="head">
-        <div class="gps">
-            <img src="./image/premium-icon-gps-4120467.png" alt="gps" height="30%">
-            <div class="location"></div>
+    <nav id="nav">
+        <div class="logo">
+            <a href="./index.html">House The Weather</a>
         </div>
-        <div class="weather">
-            <div class="weatherImage">
-                <img class="weatherIcon" src="" width="100%">
-            </div>
-            <div class="weatherText">
-                <div class="temp"></div>
-                <div class="weatherName"></div>
-            </div>
+        <div class="menu">
+            <ul class="mainMenu">
+                <li class="home">
+                    <a href="./home.html">Home</a>
+                </li>
+                <li class="spRpt">
+                    <a class="spH" href="./specialReport.html">Special Report</a> 
+                    <ul class="subMenu">
+                        <li class="crt">
+                            <a href="./current.html">Current location</a>
+                        </li>
+                        <li class="anr">
+                            <a href="./another.html">Another location</a>
+                        </li>
+                    </ul>
+                </li>    
+                <li class="week">
+                    week
+                </li>
+            </ul>
         </div>
-        <div class="date">
-            <div class="dateText"></div>
-        </div>
-    </header>
-    
-    <nav id="menu">
-        <ul class="mainMenu">
-            <li class="home">
-                <a href="./index.html">Home</a>
-            </li>
-            <li class="spRpt">
-                <a href="./specialReport.html">Special Report</a>
-                <ul class="subMenu">
-                    <li class="crt">
-                        <a href="./current.html">Current location</a>
-                    </li>
-                    <li class="anr">
-                        <a href="./another.html">Another location</a>
-                    </li>
-                </ul>
-            </li>
-            <li class="week">
-                week
-            </li>
-        </ul>
     </nav>
 
-    <main id="mainIndex">
-        <div class="chart Frame">
-            <div class="text">
-                <div>
-                    Temperature
-                </div> 
+    <header id="header">
+        <div class="space"></div>
+        <div class="head-frame">
+            <div class="gps">
+                <img src="./image/premium-icon-gps-4120467.png" alt="gps" height="10%">
+                <div class="location"></div>
             </div>
-            <div class="chartSet">
-                    <canvas id="myChart" width="3000vw" height="200vh"></canvas>
-            </div>
-        </div>
-        
-        <div class="sun Frame">
-            <div class="text">
-                <div>
-                    Sunrise
+            <div class="head">
+                <div class="head-title">
+                    House The Weather?
                 </div>
-                <div>
-                    Sunset
+                <div class="head-des">
+                    This application provides weather information for the current region and other regions.
                 </div>
             </div>
-            <div class="sun img">
-                <img src="./image/sunrise.png" alt="sunrise" width="20%">
-                <img src="./image/sunset.png" alt="sunset" width="20%">
-            </div>
-            <div class="text">
-                <div class="rise"></div>
-                <div class="set"></div>
+            <div class="date">
+                <div class="inDateText">
+                </div>
             </div>
         </div>
+    </header>
 
-        <div class="etc Frame">
-            <div class="text">
+    <main id="main">
+        <div class="main-frame">
+            <div class="main-des">
                 <div>
-                    UV Index
+                    Check your region!
                 </div>
                 <div>
-                    Wind
-                </div>
-                <div>
-                    Humidity
+                    You can "Click it" or "Enter it"
                 </div>
             </div>
-            <div class="etc img">
-                <img src="./image/sunscreen.png" alt="UV Index" width="20%">
-                <img src="./image/wind.png" alt="Wind" width="20%">
-                <img src="./image/humidity.png" alt="Humidity" width="20%">
+            <div class="main-cu">
+                <p>Click.. and Check your region!</p>
+                <a href="#" class="btn-cu">Click here!</a>
             </div>
-            <div class="text">
-                <div class="uv"></div>
-                <div class="wind"></div>
-                <div class="humidity"></div>
+    
+            <div class="main-an">
+                <p>Enter.. and Check another region!</p>
             </div>
         </div>
     </main>
-    
-    
 
+    <footer id="footer">
+        <div class="ftr-frame">
+            <article class="qna">
+                <section class="qna-title">
+                    Q&A 
+                </section>
+                <section class="qna-content">
+                    Q1. What is "House the weather"? <br><br>
+                    A1.  "House the weather" means "How's the weather"! <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This is kind of a pun! haha!
+                </section>
+            </article>
+        </div>
+    </footer>
     
-
-    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.5.1/dist/chart.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/chartjs-plugin-datalabels/2.0.0/chartjs-plugin-datalabels.min.js"></script>
-    <script src="./javascript/uvIndex.js"></script>
-    <script src="./javascript/icon.js"></script>
-    <script src="./javascript/time.js"></script>
-    <script src="./javascript/backgroundColor.js"></script>
-    <script src="./javascript/locationAPI.js"></script>
-    <script src="./javascript/homeAPI.js"></script>
-    <script src="./javascript/geoHome.js"></script>
     <script src="./javascript/date.js"></script>
+    <script src="./javascript/locationAPI.js"></script>
+    <script src="./javascript/getGeo.js"></script>
+    <script src="./javascript/geoIndex.js"></script>
+    <script src="./javascript/backImg.js"></script>
+    <script src="./javascript/homeAPI.js"></script>
 </body>
 </html>

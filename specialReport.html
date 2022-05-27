@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=100%, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./style/public.css">
+    <title>House The Weather</title>
 </head>
 <body>
     <header id="head">
@@ -30,10 +31,10 @@
     <nav id="menu">
         <ul class="mainMenu">
             <li class="home">
-                <a href="./index.html">Home</a>
+                <a href="./home.html">Home</a>
             </li>
             <li class="spRpt">
-                <a href="./specialReport.html">Special Report</a>
+                <a href="./specialReport.html">Special Report</a> 
                 <ul class="subMenu">
                     <li class="crt">
                         <a href="./current.html">Current location</a>
@@ -42,16 +43,40 @@
                         <a href="./another.html">Another location</a>
                     </li>
                 </ul>
-            </li>
+            </li>    
             <li class="week">
                 week
             </li>
         </ul>
     </nav>
 
-    <main>
-
+    <main id="mainSpRpt">
+        <div class="bgSpRpt">
+            <div class="selTit">
+                Select the location you want to know!
+            </div>
+            <article class="selLoc">
+                <section class="mainCrt">
+                    <a href="./current.html">
+                        <img class="imgCrt" src="./image/location.png" alt="currnet" width="20%" height="20%">
+                        <div class="divCrt">
+                            Current location
+                        </div>
+                    </a>
+                </section>
+                <section class="mainAnr">
+                    <a href="./another.html">
+                        <img class="imgAnr" src="./image/search.png" alt="another" width="20%" height="20%">
+                        <div class="divAnr">
+                            Another Location
+                        </div>  
+                    </a>
+                </section>
+            </article>
+        </div>
     </main>
+
+
     <script src="./javascript/uvIndex.js"></script>
     <script src="./javascript/icon.js"></script>
     <script src="./javascript/time.js"></script>
@@ -59,6 +84,6 @@
     <script src="./javascript/locationAPI.js"></script>
     <script src="./javascript/spRptAPI.js"></script>
     <script src="./javascript/geoSpRpt.js"></script>
-    <script src="./javascript/date.js"></script>
+    <script src="./javascript/date1.js"></script>
 </body>
 </html>

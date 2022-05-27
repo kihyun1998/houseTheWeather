@@ -6,7 +6,7 @@ function apiCrt(lat,lon){
     .then(response => response.json())
     .then(data => {
         //온도지정
-        const temp = document.getElementsByClassName("temp")[0];
+        const temp = document.getElementsByClassName('temp')[0];
         temp.innerText = `${data.current.temp}°C`;
 
         //날씨 설명
@@ -26,8 +26,21 @@ function apiCrt(lat,lon){
         ///////////////////////////////Head area//////////////////////////////////////
     
         //풍속
-        const wind=document.getElementsByClassName('wind')[0];
-        wind.innerText = `${data.current.wind_speed} m/s`;
+        const wind=document.getElementsByClassName('cnt')[0];
 
+        let windLevel=[];
+        let arr=[];
+
+        for(var i=0;i<48;i++){
+            windLevel[i] = windSpRpt(data.hourly[i].wind_speed, data.hourly[i].wind_gust);
+        }
+        for(var i=0;i<48;i++){
+            arr[i]=windText(windLevel[i],data.hourly[i].wind_speed, data.hourly[i].wind_gust,data.hourly[i].dt);
+        }
+        
+
+        // for(var i=0;i<48;i++){
+        //     wind.innerText +=`\n${arr[i]}`;
+        // }
     })
 }
