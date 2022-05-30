@@ -1,0 +1,138 @@
+#FRAME{
+    max-width: 75em;
+    width: 100%;
+    margin: 0 auto;
+    z-index: 2;
+}
+.space{
+    height: 6vh;
+}
+
+
+/*header부분 시작*/
+#head{
+    margin: 0.5em auto;
+    font-weight: 500;
+    max-width: 55em;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+.gps{
+    display: flex;
+    justify-content: flex-end;
+}
+.gps > img {
+    height: 3.5em;
+    width: 3em;
+}
+.location{
+    padding-top: 0.5em;
+    font-size: 1.3em;
+    font-weight: 700;
+}
+.weather{
+    margin: 0.5em auto;
+    display: flex;
+    width: 99%;
+    justify-content: space-between;
+}
+/*날씨 컨테이너*/
+.weatherText{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 48%;
+}
+/*날씨 아이콘*/
+.weatherImage{
+    display: flex;
+    justify-content: center;
+    width: 48%;
+    height: 100%;
+}
+/*날씨 아이템(온도)*/
+.temp{
+    font-size: 7em;
+
+}
+/*날씨 아이템(이름)*/
+.weatherName{
+    font-size: 3.5em;
+    text-align: left;
+    padding-left: 0.5em;
+    width: 20em;
+}
+/*날짜*/
+
+/*header부분 끝*/
+
+/*index 시작*/
+#mainIndex{
+    margin: 0.5em auto;
+    display: flex;
+    flex-direction: column;
+    height: 110em;
+    width: 55em;
+}
+.FrameI{
+    margin: 1em auto;
+    width: 90%;
+    display: flex;
+    font-weight: 500;
+    flex-direction: column;
+    border-radius: 10px;
+    background-color: rgb(230, 244, 248);
+}
+.text{
+    display:flex;
+    font-size: 1.5em;
+    justify-content: space-around;
+    text-align: center;
+}
+.img{
+    display: flex;
+    justify-content: space-around;
+    margin: 1em 0;
+}
+.text > div{
+    width: 30%;
+    font-weight: 700;
+}
+.text > p{
+    width: 30%;
+    font-weight: 600;
+    margin: 0.3em 0;
+}
+.fDust, .uFDust, .ozone{
+    font-size: 0.8em;
+    font-weight: 500;
+}
+
+
+
+/*차트 스크롤 시작*/
+.chartSet{
+    overflow-x: scroll;
+}
+.chartSet::-webkit-scrollbar{
+    width: 0.9em;
+}
+.chartSet::-webkit-scrollbar-thumb{
+    background-color: rgb(207, 238, 246);
+    border-radius: 10px;
+    background-clip: padding-box;
+    border: 2px solid transparent;
+}
+.chartSet::-webkit-scrollbar-thumb:hover{
+    background-color: rgba(240, 248, 250, 0.667);
+}
+.chartSet::-webkit-scrollbar-thumb:active{
+    background-color:rgba(96, 243, 243, 0.641);
+}
+.chartSet::-webkit-scrollbar-track{
+    background-color: rgb(230, 244, 248);
+    border-radius: 10px;
+}
+/*차트 끝*/
+/*index 끝*/
