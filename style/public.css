@@ -1,3 +1,4 @@
+
 /*웹 폰트 사용*/
 @import url('https://fonts.googleapis.com/css2?family=Coiny&family=Dongle&family=Gothic+A1&family=Hahmlet&family=Montserrat+Alternates&family=Press+Start+2P&family=Source+Code+Pro:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Coiny&family=Dongle&family=Gothic+A1&family=Hahmlet&family=Montserrat+Alternates&family=Open+Sans:wght@370&family=Press+Start+2P&family=Source+Code+Pro:wght@500&display=swap');
@@ -32,6 +33,22 @@ body{
 #nav  a{
     color: aliceblue;
 }
+.logo{
+    width: 20vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo > a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 11em;
+    height: 2em;
+    font-family: 'Keania One', cursive;
+    background-color: rgb(73, 160, 73);
+    border-radius: 30px 5px 30px 5px;
+}
 
 /*메인베뉴 설정*/
 .mainMenu{
@@ -42,13 +59,13 @@ body{
     text-align: center;
     height: 5vh;
 }   
-.home{
+.today{
     transition: background-color 0.3s;
     width: 30%;
     border-radius: 10px;
     padding-top: 0.3em;
 }
-.live{
+.chart{
     transition: background-color 0.3s;
     width: 30%;
     border-radius: 10px 10px 0px 0px;
@@ -60,30 +77,26 @@ body{
     border-radius: 10px;
     padding-top: 0.3em;
 }
-.home:hover{
+.today:hover{
     background-color: rgb(63, 67, 68);
     border-radius: 10px
 }
-.home:active{
-    background-color:rgb(110, 214, 192);
+.today:active{
+    background-color:rgb(0, 255, 234);
 }
-.live:hover{
+.chart:hover{
     background-color: rgb(63, 67, 68);
     border-radius: 10px 10px 0px 0px;
 }
-.live:active{
-    background-color:rgb(110, 214, 192);
-}
-.live:hover > .subMenu{
-    display: flex;
-    opacity: 1;
+.chart:active{
+    background-color:rgb(0, 255, 234);
 }
 .week:hover{
     background-color: rgb(63, 67, 68);
     border-radius: 10px
 }
 .week:active{
-    background-color:rgb(110, 214, 192);
+    background-color:rgb(0, 255, 234);
 }
 
 
@@ -94,7 +107,10 @@ ul{
     list-style: none;
 }
 a{
+    display: inline-block;
     text-decoration: none;
+    width: 100%;
+    height: 100%;
 }
 a:link{
     color: black;
@@ -121,8 +137,6 @@ a:visited{
 .menu{
     width: 80vw;
 }
-
-
 .date{
     margin: 0.5em auto;
     display: flex;

@@ -8,7 +8,7 @@ function apiHome(lat,lon){
     .then(data => {
         //온도지정
         const temp = document.getElementsByClassName("temp")[0];
-        temp.innerText = `${data.current.temp}°C`;
+        temp.innerText = `${data.current.temp}°`;
 
         //날씨 설명
         const weatherName = data.hourly[0].weather[0].main;
@@ -24,6 +24,18 @@ function apiHome(lat,lon){
         const weatherIcon = document.getElementsByClassName('weatherIcon')[0];
         let icon = getIcon(weatherName);
         weatherIcon.src = icon;
+
+        //날씨 최대
+        const maxTemp = document.getElementsByClassName('maxT')[0]
+        maxTemp.innerText = `${data.daily[0].temp.max}° / `;
+
+        //날씨 최소
+        const minTemp = document.getElementsByClassName('minT')[0]
+        minTemp.innerText = `\u00A0${data.daily[0].temp.min}°`;
+
+        //체감온도
+        const feelsLike = document.getElementsByClassName('fl')[0]
+        feelsLike.innerText = `feels like ${data.current.feels_like}°`
 
         ///////////////////////////////Head area//////////////////////////////////////
 
@@ -148,128 +160,5 @@ function apiHome(lat,lon){
                 }
             }
         });
-
-
-
-        //강수 강우 chart JS 영역
-        chartRain=[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
-        for(var i=0; i<25; i++){
-            try{
-                let rainVal = data.hourly[i].rain['1h'];
-                insert(i,rainVal);
-            } catch(e){
-                
-            }
-        }
-
-        //차트 지역 연동
-        let preChart = document.getElementById('myChart2').getContext('2d');
-        // 차트를 생성한다. 
-        let myChart2 = new Chart(preChart, {
-            // line 차트 선언
-            type: 'line',
-            // 차트의 데이터
-            data: {
-                // 차트 x축 값 (시간)
-                labels: ['current',`${timeHour[0]}`,`${timeHour[1]}`,`${timeHour[2]}`,`${timeHour[3]}`,`${timeHour[4]}`,`${timeHour[5]}`,`${timeHour[6]}`,`${timeHour[7]}`,`${timeHour[8]}`,`${timeHour[9]}`
-                ,`${timeHour[10]}`,`${timeHour[11]}`,`${timeHour[12]}`,`${timeHour[13]}`,`${timeHour[14]}`,`${timeHour[15]}`,`${timeHour[16]}`,`${timeHour[17]}`,`${timeHour[18]}`,`${timeHour[19]}`
-                ,`${timeHour[20]}`,`${timeHour[21]}`,`${timeHour[22]}`,`${timeHour[23]}`,'future'],
-                // 차트 내에 표시될 데이터들
-                datasets: [{
-                    //label 이름
-                    label:'rain',
-                    // y축 값 (강수량)
-                    data: [`${chartRain[0]}`,`${chartRain[0]}`,`${chartRain[1]}`,`${chartRain[2]}`,`${chartRain[3]}`,`${chartRain[4]}`,`${chartRain[5]}`,`${chartRain[6]}`,`${chartRain[7]}`,`${chartRain[8]}`,`${chartRain[9]}`
-                    ,`${chartRain[10]}`,`${chartRain[11]}`,`${chartRain[12]}`,`${chartRain[13]}`,`${chartRain[14]}`,`${chartRain[15]}`,`${chartRain[16]}`,`${chartRain[17]}`,`${chartRain[18]}`,`${chartRain[19]}`
-                    ,`${chartRain[20]}`,`${chartRain[21]}`,`${chartRain[22]}`,`${chartRain[23]}`,`${chartRain[23]}`],
-                    //line 색
-                    borderColor: 'rgb(255, 254, 176)',
-                    backgroundColor: 'rgb(255, 254, 176)',
-                    //line 두깨
-                    borderWidth: 3,
-                    //값 표현
-                    datalabels:{
-                        color:'rgb(85, 81, 81)',
-                        font:{size:20,weight:'bold'},
-                    },
-                }]
-            },
-            //chartDataLabels 플러그인
-            plugins: [ChartDataLabels],
-            // 차트 옵션
-            options: {
-                //차트 고정
-                responsive:false,
-                plugins:{
-                    //차트 상 값 표시
-                    datalabels:{
-                        align:'top',
-                        formatter:function(value,context){
-                            let idx=context.dataIndex;
-                            if(idx==0 || idx==25){
-                                return '';
-                            }
-                            return chartRain[idx-1]+"mm";
-                        }
-                    },
-                    // 라벨 위치
-                    legend: {
-                        position:'left'
-                    }
-                },
-                scales:{
-                    //x축 
-                    xAxis: {
-                        //눈금 제거
-                        grid:{
-                            display:false
-                        }
-                    },
-                    //y축 
-                    yAxis: {
-                        //눈금 제거
-                        grid:{
-                            display:false,
-                        },
-                        ticks:{
-                            display:false,
-                        },
-                        //y축 최대값 설정
-                    }
-                }
-            }
-        });
     })
 }
-
-function insert(i,v){
-    rst = chartRain[i] = v;
-}
-// chartSnow=[];
-// for(var i=0; i<25; i++){
-//     let snowVal = data.hourly[i].snow;
-//     if(snowVal == undefined){
-//         snowVal = 0
-//     }
-//     chartSnow[i]=snowVal;
-// }
-
-
-
-// },{
-//     //label 이름
-//     label:'snow',
-//     // y축 값 (강우량)
-//     data: [`${chartSnow[0]}`,`${chartSnow[0]}`,`${chartSnow[1]}`,`${chartSnow[2]}`,`${chartSnow[3]}`,`${chartSnow[4]}`,`${chartSnow[5]}`,`${chartSnow[6]}`,`${chartSnow[7]}`,`${chartSnow[8]}`,`${chartSnow[9]}`
-//     ,`${chartSnow[10]}`,`${chartSnow[11]}`,`${chartSnow[12]}`,`${chartSnow[13]}`,`${chartSnow[14]}`,`${chartSnow[15]}`,`${chartSnow[16]}`,`${chartSnow[17]}`,`${chartSnow[18]}`,`${chartSnow[19]}`
-//     ,`${chartSnow[20]}`,`${chartSnow[21]}`,`${chartSnow[22]}`,`${chartSnow[23]}`,`${chartSnow[23]}`],
-//     //line 색
-//     borderColor: 'rgba(216, 238, 252, 0.753)',
-//     backgroundColor: 'rgba(216, 238, 252, 0.753)',
-//     //line 두깨
-//     borderWidth: 3,
-//     //값 표현
-//     datalabels:{
-//         color:'rgb(85, 81, 81)',
-//         font:{size:20,weight:'bold'},
-//     }

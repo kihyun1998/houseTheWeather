@@ -6,10 +6,11 @@
     <meta name="viewport" content="width=100%, initial-scale=1.0">
     <link rel="stylesheet" href="./style/style.css">
     <link rel="stylesheet" href="./style/public.css">
+    <link rel="stylesheet" href="./style/week.css">
     <title>House The Weather</title>
     <script src="https://cdn.jsdelivr.net/npm/chart.js@3.5.1/dist/chart.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/chartjs-plugin-datalabels/2.0.0/chartjs-plugin-datalabels.min.js"></script>
-
+    <script src="https://kit.fontawesome.com/a0e6df9358.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <nav id="nav">
@@ -18,11 +19,11 @@
         </div>
         <div class="menu">
             <ul class="mainMenu">
-                <li class="home">
+                <li class="today">
                     <a href="./today.html">Today</a>
                 </li>
-                <li class="live">
-                    <a href="./live.html">Live</a> 
+                <li class="chart">
+                    <a href="./chart.html">Chart</a>
                 </li>    
                 <li class="week">
                     <a href="./week.html">week</a>
@@ -35,7 +36,7 @@
             <div class="space"></div>
             <div class="gps">
                 <img src="./image/premium-icon-gps-4120467.png" alt="gps" height="30%">
-                <div class="location"></div>
+                <div class="location">PLEASE SET COORDINATE</div>
             </div>
             <div class="weather">
                 <div class="weatherImage">
@@ -44,6 +45,11 @@
                 <div class="weatherText">
                     <div class="temp"></div>
                     <div class="weatherName"></div>
+                    <div class="mxmn">
+                        <div class="maxT"></div>
+                        <div class="minT"></div>
+                    </div>
+                    <div class="fl"></div>
                 </div>
             </div>
             <div class="date">
@@ -52,28 +58,19 @@
         </header>
     
         <main id="mainIndex">
-            <div class="chart FrameI">
-                <div class="text">
-                    <div>
-                        Temperature
-                    </div> 
-                </div>
-                <div class="chartSet">
-                        <canvas id="myChart" width="3000vw" height="200vh"></canvas>
+            <div class="button">
+                <div class="btnF">
+                    <button class="left">
+                        <i class="fa-solid fa-arrow-left-long"></i>
+                    </button>
+                    <div class="btn-text">
+                        Change Date
+                    </div>
+                    <button class="right">
+                        <i class="fa-solid fa-arrow-right-long"></i>
+                    </button>
                 </div>
             </div>
-            
-            <article class="rain FrameI">
-                <div class="text">
-                    <div>
-                        Rainfall
-                    </div> 
-                </div>
-                <div class="chartSet">
-                        <canvas id="myChart2" width="3000vw" height="200vh"></canvas>
-                </div>
-            </article>
-    
             <div class="sun FrameI">
                 <div class="text">
                     <div>
@@ -93,7 +90,7 @@
                 </div>
             </div>
     
-            <article class="etc FrameI">
+            <div class="etc FrameI">
                 <div class="text">
                     <div>
                         UV Index
@@ -115,9 +112,9 @@
                     <p class="wind"></p>
                     <p class="humidity"></p>
                 </div>
-            </article>
+            </div>
     
-            <article class="air FrameI">
+            <div class="air FrameI">
                 <div class="text">
                     <div>Fine dust</div>
                     <div>Ultra-fine dust</div>
@@ -138,7 +135,7 @@
                     <p class="uFDust"></p>
                     <p class="ozone"></p>
                 </div>
-            </article>
+            </div>
         </main>
     </div>
     <footer id="footer">
@@ -155,6 +152,7 @@
             </article>
         </div>
     </footer>
+    
 
     <script src="./javascript/airAPI.js"></script>
     <script src="./javascript/backImg.js"></script>
@@ -163,8 +161,9 @@
     <script src="./javascript/date.js"></script>
     <script src="./javascript/backgroundColor.js"></script>
     <script src="./javascript/locationAPI.js"></script>
-    <script src="./javascript/homeAPI.js"></script>
-    <script src="./javascript/geoHome.js"></script>
+    <script src="./javascript/weekAPI.js"></script>
+    <script src="./javascript/geoWeek.js"></script>
+    <script src="./javascript/weekBtn.js"></script>
     
     
 </body>

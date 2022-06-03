@@ -18,11 +18,11 @@
         </div>
         <div class="menu">
             <ul class="mainMenu">
-                <li class="home">
+                <li class="today">
                     <a href="./today.html">Today</a>
                 </li>
-                <li class="live">
-                    <a href="./live.html">Live</a> 
+                <li class="chart">
+                    <a href="./chart.html">Chart</a>
                 </li>    
                 <li class="week">
                     <a href="./week.html">week</a>
@@ -35,7 +35,7 @@
             <div class="space"></div>
             <div class="gps">
                 <img src="./image/premium-icon-gps-4120467.png" alt="gps" height="30%">
-                <div class="location"></div>
+                <div class="location">PLEASE SET COORDINATE</div>
             </div>
             <div class="weather">
                 <div class="weatherImage">
@@ -44,6 +44,11 @@
                 <div class="weatherText">
                     <div class="temp"></div>
                     <div class="weatherName"></div>
+                    <div class="mxmn">
+                        <div class="maxT"></div>
+                        <div class="minT"></div>
+                    </div>
+                    <div class="fl"></div>
                 </div>
             </div>
             <div class="date">
@@ -52,7 +57,7 @@
         </header>
     
         <main id="mainIndex">
-            <div class="chart FrameI">
+            <div class="temper FrameI">
                 <div class="text">
                     <div>
                         Temperature
@@ -62,17 +67,6 @@
                         <canvas id="myChart" width="3000vw" height="200vh"></canvas>
                 </div>
             </div>
-            
-            <article class="rain FrameI">
-                <div class="text">
-                    <div>
-                        Rainfall
-                    </div> 
-                </div>
-                <div class="chartSet">
-                        <canvas id="myChart2" width="3000vw" height="200vh"></canvas>
-                </div>
-            </article>
     
             <div class="sun FrameI">
                 <div class="text">
@@ -93,7 +87,7 @@
                 </div>
             </div>
     
-            <article class="etc FrameI">
+            <div class="etc FrameI">
                 <div class="text">
                     <div>
                         UV Index
@@ -115,9 +109,9 @@
                     <p class="wind"></p>
                     <p class="humidity"></p>
                 </div>
-            </article>
+            </div>
     
-            <article class="air FrameI">
+            <div class="air FrameI">
                 <div class="text">
                     <div>Fine dust</div>
                     <div>Ultra-fine dust</div>
@@ -138,7 +132,7 @@
                     <p class="uFDust"></p>
                     <p class="ozone"></p>
                 </div>
-            </article>
+            </div>
         </main>
     </div>
     <footer id="footer">
