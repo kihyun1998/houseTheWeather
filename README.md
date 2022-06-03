@@ -16,3 +16,7 @@ v0.9.3 Add Weather Icons.
 
 v0.9.4 Add temperature to Chart Js
        Add UV Index, Wind, Humidity
+       
+v0.9.5 Add New Index Page
+       Change functions and UI
+       Add Background Image
