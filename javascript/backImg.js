@@ -2,9 +2,9 @@
 function bImg(time,rise,set){
     if(time>=set+1000 || time<rise){
         return 'url(./image/night.jpg)';
-    }else if(time>=rise && time<rise+2000){
+    }else if(time>=rise && time<rise+1200){
         return 'url(./image/sunrise.jpg)';
-    }else if(time>=rise+2000 && time<set){
+    }else if(time>=rise+1200 && time<set){
         return 'url(./image/defualt.jpg)';
     }else if(time>=set && time<set+1000){
         return 'url(./image/sunset.jpg)';

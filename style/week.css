@@ -46,3 +46,19 @@
 .right:active{
     background-color: rgb(129, 129, 129);
 }
+
+
+
+.tempC{
+    display: flex;
+    align-items: baseline;
+}
+.max-temp{
+    font-size: 6em;
+}
+.min-temp{
+    font-size: 6em;
+}
+.tempText{
+    font-size: 3em;
+}

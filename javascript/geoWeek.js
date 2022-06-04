@@ -1,12 +1,16 @@
-let lat = window.localStorage.getItem('lat');
-let lon = window.localStorage.getItem('lon');
+weekIndex = 0;
 
-apiAir(lat,lon);
-apiLoc(lat,lon);
-apiWeek(lat,lon);
+function geoWeek(weekIndex){
+    let lat = window.localStorage.getItem('lat');
+    let lon = window.localStorage.getItem('lon');
+    let time = 86400;
 
-setDate("dateText");
+    apiLoc(lat,lon);
+    apiWeek(lat,lon,weekIndex);
 
+    setWeek("dateText",weekIndex*time);
+}
+geoWeek(weekIndex);
 
 
 

@@ -81,3 +81,35 @@ function sunTime(time){
     let newTime = hour*1000 + minutes;
     return newTime;
 }
+
+
+//week 날짜
+function setWeek(cName,i){
+    //날짜 데이터 받아오기
+    let now = new Date();
+    now.setSeconds(now.getSeconds()+i);
+    console.log(now)
+    const year = now.getFullYear();
+    const mon = now.getMonth();
+    const date = now.getDate();
+    const day = now.getDay();
+    //월 표시 데이터 가공
+    let monEn;
+    const monarr = new Array("Jan.","Feb.","Mar.","Apr.","May","Jun.","Jul.","Aug.","Sep.","Oct.","Nov.","Dec.");
+    for(var i =0; i<monarr.length; i++){
+        if(mon==i){
+            monEn = monarr[i];
+        }
+    }
+    //요일 표시 데이터 가공
+    let dayEn;
+    const dayarr = new Array("Sun.","Mon.","The.","Wed.","Thu.","Fri.","Sat.");
+    for(var j=0; j<dayarr.length; j++){
+        if(day==j){
+            dayEn = dayarr[j]
+        }
+    }
+
+    const date2 = document.getElementsByClassName(cName)[0];
+    date2.innerText = `${dayEn} ${monEn} ${date} ${year}`;
+}

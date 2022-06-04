@@ -23,3 +23,7 @@ v0.9.5 Add New Index Page
 
 v1.0.0 Only use "Today" Tap
        Other functions will be updated later.
+
+v1.1.0 Add Week Tap's functions
+       (modified button,temp,date)
+       (and remove air pollution function) > due to functional problems
