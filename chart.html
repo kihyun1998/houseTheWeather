@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=100%, initial-scale=1.0">
     <link rel="stylesheet" href="./style/style.css">
     <link rel="stylesheet" href="./style/public.css">
+    <link rel="stylesheet" href="./style/mediaP.css">
     <title>House The Weather</title>
     <script src="https://cdn.jsdelivr.net/npm/chart.js@3.5.1/dist/chart.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/chartjs-plugin-datalabels/2.0.0/chartjs-plugin-datalabels.min.js"></script>
@@ -68,11 +69,21 @@
                         <canvas id="myChart" width="3000vw" height="200vh"></canvas>
                 </div>
             </div>
+            <div class="temper FrameI">
+                <div class="text">
+                    <div>
+                        Temp Max&Min
+                    </div> 
+                </div>
+                <div class="chartSet">
+                        <canvas id="myChart5" width="1300vw" height="200vh"></canvas>
+                </div>
+            </div>
 
             <div class="rain FrameI">
                 <div class="text">
                     <div>
-                        Rainfall
+                        Rainfall[24H]
                     </div> 
                 </div>
                 <div class="chartSet">
@@ -82,13 +93,25 @@
             <div class="snow FrameI">
                 <div class="text">
                     <div>
-                        Snowfall
+                        Snowfall[24H]
                     </div> 
                 </div>
                 <div class="chartSet">
                         <canvas id="myChart3" width="3000vw" height="200vh"></canvas>
                 </div>
             </div>
+
+            <div class="airP FrameI">
+                <div class="text">
+                    <div>
+                        Air Pollution[24H]
+                    </div> 
+                </div>
+                <div class="chartSet">
+                        <canvas id="myChart4" width="3000vw" height="200vh"></canvas>
+                </div>
+            </div>
+            
         </main>
     </div>
     <footer id="footer">
@@ -99,23 +122,29 @@
                 </section>
                 <section class="qna-content">
                     Q1. What is "House the weather"? <br><br>
-                    A1.  "House the weather" means "How's the weather"! <br>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This is kind of a pun! haha!
+                    A1. "House the weather" means "How's the weather"! <br>
+                    This is kind of a pun! HaHa!
+                </section>
+                <br><br>
+                <section class="qna-content">
+                    Q2. The region name on the website is different from <br>
+                    the current region one.<br><br>
+                    A2. If your area and the area displayed <br>
+                    on the website are different, press the GPS button.
                 </section>
             </article>
         </div>
     </footer>
     
 
-    <script src="./javascript/airAPI.js"></script>
-    <script src="./javascript/backImg.js"></script>
-    <script src="./javascript/uvIndex.js"></script>
-    <script src="./javascript/icon.js"></script>
-    <script src="./javascript/date.js"></script>
-    <script src="./javascript/backgroundColor.js"></script>
-    <script src="./javascript/locationAPI.js"></script>
-    <script src="./javascript/graphAPI.js"></script>
-    <script src="./javascript/geoGraph.js"></script>
+    <script type="text/javascript" src="./javascript/backImg.js"></script>
+    <script type="text/javascript" src="./javascript/uvIndex.js"></script>
+    <script type="text/javascript" src="./javascript/icon.js"></script>
+    <script type="text/javascript" src="./javascript/date.js"></script>
+    <script type="text/javascript" src="./javascript/backgroundColor.js"></script>
+    <script type="text/javascript" src="./javascript/locationAPI.js"></script>
+    <script type="text/javascript" src="./javascript/chartAPI.js"></script>
+    <script type="text/javascript" src="./javascript/geoChart.js"></script>
     
     
 </body>

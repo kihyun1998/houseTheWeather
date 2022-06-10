@@ -15,13 +15,20 @@ function apiWeek(lat,lon,i){
 
         //날씨 설명
         const weatherName = data.daily[i].weather[0].main;
+        const weatherDes = data.daily[i].weather[0].description;
         const weather = document.getElementsByClassName("weatherName")[0];
-        weather.innerText = weatherName;
+        weather.innerText = weatherDes;
 
         //날씨에 따른 배경색 지정
-        const color = background(weatherName);
+        const colorB = background(weatherName);
+        document.getElementById("FRAME").style.backgroundColor=`${colorB}`;
 
-        document.getElementById("FRAME").style.backgroundColor=`${color}`;
+        //날씨에 따른 프레임 색 지정
+        const colorF = frameColor(weatherName);
+        let frameI = document.getElementsByClassName("FrameI");
+        for(var j=0;frameI.length>j;j++){
+            frameI[j].style.backgroundColor=`${colorF}`;
+        };
 
         //날씨 아이콘
         const weatherIcon = document.getElementsByClassName('weatherIcon')[0];

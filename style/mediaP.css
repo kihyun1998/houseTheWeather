@@ -1,0 +1,160 @@
+@media all 
+and (max-width:800px){
+    .space{
+        height: 1em;
+    }
+    #footer{
+        height: 25vh;
+        font-size: 0.8em;
+        min-width: 30em;
+    }
+    #expand{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #btn-expand{
+        background-color: rgb(0, 31, 39);;
+        color: white;
+        font-size: 2em;
+    }
+    #nav{
+        display: flex;
+        min-height: 4em;
+        width: 100%;
+    }
+    .logo{
+        margin: 0 auto;
+        min-width: 10em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .logo > a{
+
+        width: 15em;
+        height: 3em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .menu{
+        display: none;
+    }
+    .little-menu{
+        position: absolute;
+        background-color: black;
+        width: 100%;
+        height: 100vh;
+    }
+    .mainMenu{
+        width: 90%;
+        max-width: 30em;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        font-size: 2em;
+        text-align: center;
+        border: 1px solid red;
+    }
+    a:link{
+        color: white;
+    }
+    a:visited{
+        color: white;
+    }
+}
+@media all 
+and (min-width: 801px){
+    .space{
+        height: 6vh;
+    }
+    #footer{
+        min-width: 30em;
+    }
+    #nav{
+        min-height: 3em;
+        width: 100%;
+        position: fixed;
+        display: flex;
+    }
+    .logo{
+        min-width: 10em;
+        max-width: 20vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .logo > a{
+        width: 11em;
+        height: 2em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+    .menu{
+        width: 80vw;
+    }
+    /*메인베뉴 설정*/
+    .mainMenu{
+        display:flex;
+        min-width: 5em;
+        font-weight: 800;
+        font-size: 1.5em;
+        justify-content: space-around;
+        text-align: center;
+        height: 5vh;
+    }   
+    .today{
+        transition: background-color 0.3s;
+        width: 30%;
+        border-radius: 10px;
+        padding-top: 0.3em;
+    }
+    .chart{
+        transition: background-color 0.3s;
+        width: 30%;
+        border-radius: 10px 10px 0px 0px;
+        padding-top: 0.3em; 
+    }
+    .week{
+        transition: background-color 0.3s;
+        width: 30%;
+        border-radius: 10px;
+        padding-top: 0.3em;
+    }
+    .today:hover{
+        background-color: rgb(63, 67, 68);
+        border-radius: 10px
+    }
+    .today:active{
+        background-color:rgb(0, 255, 234);
+    }
+    .chart:hover{
+        background-color: rgb(63, 67, 68);
+        border-radius: 10px 10px 0px 0px;
+    }
+    .chart:active{
+        background-color:rgb(0, 255, 234);
+    }
+    .week:hover{
+        background-color: rgb(63, 67, 68);
+        border-radius: 10px
+    }
+    .week:active{
+        background-color:rgb(0, 255, 234);
+    }
+    #expand{
+        display: none;
+    }
+    .little-menu{
+        display: none;
+    }
+    a:link{
+        color: black;
+    }
+    a:visited{
+        color: black;
+    }   
+}

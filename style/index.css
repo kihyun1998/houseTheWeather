@@ -1,52 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Coiny&family=Dongle&family=Gothic+A1&family=Hahmlet&family=Keania+One&family=Montserrat+Alternates&family=Open+Sans:wght@300;500&family=Press+Start+2P&display=swap');
-#nav{
-    min-height: 3em;
-    width: 100%;
-    background-color: rgb(0, 31, 39);
-    position: fixed;
-    display: flex;
-    color: aliceblue;
 
-}
-#nav  a{
-    color: aliceblue;
-}
-.logo{
-    width: 20vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.logo > a{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 11em;
-    height: 2em;
-    font-family: 'Keania One', cursive;
-    background-color: rgb(73, 160, 73);
-    border-radius: 30px 5px 30px 5px;
-}
-.menu{
-    width: 80vw;
-}
 #header{
+    position: relative;
     margin: 0 auto;
-    max-width: 70em;
-    width: 100vw;
     font-weight: 700;
-    height: 40vh;
     display: flex;
     flex-direction: column;
     background-color: rgb(134,177,229);
-    
-}
-.space{
-    height: 6vh;
 }
 .head-frame{
     margin: 0 auto;
-    font-size: 3em;
     display: flex;
     height: 100%;
     width: 90%;
@@ -76,12 +39,8 @@
 }
 
 #main{
-    height: 60vh;
     margin: 0 auto;
     background-color: rgba(204,234,216,0.9);
-    max-width: 70em;
-    width: 100vw;
-
 }
 .main-frame{
     width: 100%;
@@ -91,8 +50,6 @@
     justify-content: space-between;
 }
 .main-des{
-    height: 20vh;
-    font-size: 1.8em;
     font-weight: 700;
     display: flex;
     flex-direction: column;
@@ -104,55 +61,56 @@
     margin: 0.1em 0.5em;
 }
 .main-cu{
-    height: 20vh;
-    font-size: 2em;
     font-weight: 500;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    border-bottom: 1px solid black;
 }
 #btn-cu{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgb(160,161,156);
+    background-color: rgb(24, 49, 83);
+    color: white;
     border-radius: 30px 5px 30px 5px;
-    width: 40%;
-    height: 40%;
+    width: 20%;
+    height: 30%;
     border: 0px;
     font-size: 1em;
     cursor: pointer;
     transition: background-color 0.3s;
 }
 #btn-cu:hover{
-    background-color: rgb(118, 119, 112);
+    background-color: rgb(6, 31, 63);
 }
 .main-an{
-    height: 30vh;
-    font-size: 2em;
     font-weight: 500;
     display: flex;
     flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#btn-an{
+    display: flex;
     justify-content: center;
     align-items: center;
+    background-color: rgb(24, 49, 83);
+    color: white;
+    border-radius: 30px 5px 30px 5px;
+    width: 20%;
+    height: 20%;
+    border: 0px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+#btn-an:hover{
+    background-color:  rgb(6, 31, 63);
 }
 
-#footer{
-    height: 10em;
-    color: aliceblue;
-    background-color: rgb(0, 31, 39);
-    display: flex;
-    align-items: center;
-}
-.ftr-frame{
-    margin: 0 auto;
-    width: 90%;
-}
-.qna-title{
-    font-size: 2em;
-    font-weight: 700;
-}
+
 
 
 

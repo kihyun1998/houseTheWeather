@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/map.css">
+    <link rel="stylesheet" href="./style/public.css">
+    <link rel="stylesheet" href="./style/mediaP.css">
+    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=9de33d00e66134160a88cbbaf4f3282d"></script>
+    <title>Document</title>
+</head>
+<body>
+    <nav id="nav">
+        <div class="logo">
+            <a href="./index.html">House The Weather</a>
+        </div>
+        <div class="menu">
+            <ul class="mainMenu">
+                <li class="today">
+                    <a href="./today.html">Today</a>
+                </li>
+                <li class="chart">
+                    <a href="./chart.html">Chart</a>
+                </li>    
+                <li class="week">
+                    <a href="./week.html">Week</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <header id="header">
+        <div class="space"></div>
+        <div id="coord-frame">
+            <div id="coord-head">
+                Your Coord
+            </div>
+            <div id="coord-msg">
+            </div>
+        </div>
+    </header>
+    <main id="main">
+        <div id="map"></div>
+        <div id="coord-footer">
+            <div id="coord-val"></div>
+            <div class="location"></div>
+        </div>
+
+    </main>
+    <footer id="footer">
+        <div class="ftr-frame">
+            <article class="qna">
+                <section class="qna-title">
+                    Q&A 
+                </section>
+                <section class="qna-content">
+                    Q1. What is "House the weather"? <br><br>
+                    A1. "House the weather" means "How's the weather"! <br>
+                    This is kind of a pun! HaHa!
+                </section>
+                <br><br>
+                <section class="qna-content">
+                    Q2. The region name on the website is different from <br>
+                    the current region one.<br><br>
+                    A2. If your area and the area displayed <br>
+                    on the website are different, press the GPS button.
+                </section>
+            </article>
+        </div>
+    </footer>
+
+    <script type="text/javascript" src="./javascript/map.js"></script>
+    <script type="text/javascript" src="./javascript/locationAPI.js"></script>
+</body>
+</html>
+

@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style/public.css">
     <link rel="stylesheet" href="./style/index.css">
+    <link rel="stylesheet" href="./style/mediaI.css">
+    <link rel="stylesheet" href="./style/mediaP.css">
+    <script src="https://kit.fontawesome.com/a0e6df9358.js" crossorigin="anonymous"></script>
     <title>House The Weather</title>
 </head>
 <body>
@@ -25,6 +28,11 @@
                     <a href="./week.html">Week</a>
                 </li>
             </ul>
+        </div>
+        <div id="expand">
+            <button id="btn-expand">
+                <i class="fa-solid fa-bars"></i>
+            </button>
         </div>
     </nav>
 
@@ -48,33 +56,44 @@
                 </div>
             </div>
         </div>
+        <div class="little-menu">
+            <ul class="mainMenu">
+                <li class="today">
+                    <a href="./today.html">Today</a>
+                </li>
+                <li class="chart">
+                    <a href="./chart.html">Chart</a>
+                </li>    
+                <li class="week">
+                    <a href="./week.html">Week</a>
+                </li>
+            </ul>
+        </div>
     </header>
+    
+
 
     <main id="main">
         <div class="main-frame">
             <div class="main-des">
                 <div>
-                    Check your region! You can "Click it" or "Enter it"
+                    Check your coordinates! You can set current or another regions.
                 </div>
                 <div>
-                    If you're get back this pasge, Please click the region button again.
+                    If you are in a different area, reset the coordinates.
                 </div>
             </div>
             <div class="main-cu">
                 <p>Click.. and Check your region!</p>
-                <button type="button" id="btn-cu">Click here!</button>
-                <!--<a href="#" id="btn-cu">Click here!</a>-->
+                <button type="button" id="btn-cu">
+                    <i class="fa-solid fa-location-dot"></i>
+                </button>
             </div>
-    
             <div class="main-an">
-                <p>Input.. and Check another region!</p>
-                <div class="main-ins">
-                    <label for="latitud">latitud :</label>
-                    <input type="text" id="latitud">
-                    <label for="longitud">longitud :</label>
-                    <input type="text" id="longitud">
-                    <button id="btn-an">Click!</button>
-                </div>
+                <p>Go to the map page and click the place you want.</p>
+                <button type="button" id="btn-an">
+                    <i class="fa-solid fa-map-location-dot"></i>
+                </button>
             </div>
         </div>
     </main>
@@ -87,18 +106,25 @@
                 </section>
                 <section class="qna-content">
                     Q1. What is "House the weather"? <br><br>
-                    A1.  "House the weather" means "How's the weather"! <br>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This is kind of a pun! HaHa!
+                    A1. "House the weather" means "How's the weather"! <br>
+                    This is kind of a pun! HaHa!
+                </section>
+                <br><br>
+                <section class="qna-content">
+                    Q2. The region name on the website is different from <br>
+                    the current region one.<br><br>
+                    A2. If your area and the area displayed <br>
+                    on the website are different, press the GPS button.
                 </section>
             </article>
         </div>
     </footer>
+
     
-    <script src="./javascript/date.js"></script>
-    <script src="./javascript/locationAPI.js"></script>
-    <script src="./javascript/getGeo.js"></script>
-    <script src="./javascript/geoIndex.js"></script>
-    <script src="./javascript/backImg.js"></script>
-    <script src="./javascript/homeAPI.js"></script>
+    <script type="text/javascript" src="./javascript/date.js"></script>
+    <script type="text/javascript" src="./javascript/locationAPI.js"></script>
+    <script type="text/javascript" src="./javascript/getGeo.js"></script>
+    <script type="text/javascript" src="./javascript/backImg.js"></script>
+    <script type="text/javascript" src="./javascript/geoIndex.js"></script>
 </body>
 </html>

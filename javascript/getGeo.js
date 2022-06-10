@@ -18,5 +18,11 @@ function getGeo(){
 }
 
 
-
+//click here!
 document.getElementById('btn-cu').addEventListener('click', getGeo);
+
+//go map!
+document.getElementById('btn-an').addEventListener('click',
+            function(){
+                location.href='map.html';
+            });

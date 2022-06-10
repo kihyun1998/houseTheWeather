@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=100%, initial-scale=1.0">
     <link rel="stylesheet" href="./style/style.css">
     <link rel="stylesheet" href="./style/public.css">
+    <link rel="stylesheet" href="./style/mediaP.css">
     <title>House The Weather</title>
     <script src="https://cdn.jsdelivr.net/npm/chart.js@3.5.1/dist/chart.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/chartjs-plugin-datalabels/2.0.0/chartjs-plugin-datalabels.min.js"></script>
@@ -33,26 +34,28 @@
     <div id="FRAME">
         <header id="head">
             <div class="space"></div>
-            <div class="gps">
-                <img src="./image/premium-icon-gps-4120467.png" alt="gps" height="30%">
-                <div class="location">PLEASE SET COORDINATE</div>
-            </div>
-            <div class="weather">
-                <div class="weatherImage">
-                    <img class="weatherIcon" src="" width="100%">
+            <div id="FrameH">
+                <div class="gps">
+                    <img src="./image/premium-icon-gps-4120467.png" alt="gps" height="30%">
+                    <div class="location">PLEASE SET COORDINATE</div>
                 </div>
-                <div class="weatherText">
-                    <div class="temp"></div>
-                    <div class="weatherName"></div>
-                    <div class="mxmn">
-                        <div class="maxT"></div>
-                        <div class="minT"></div>
+                <div class="weather">
+                    <div class="weatherImage">
+                        <img class="weatherIcon" src="" width="100%">
                     </div>
-                    <div class="fl"></div>
+                    <div class="weatherText">
+                        <div class="temp"></div>
+                        <div class="weatherName"></div>
+                        <div class="mxmn">
+                            <div class="maxT"></div>
+                            <div class="minT"></div>
+                        </div>
+                        <div class="fl"></div>
+                    </div>
                 </div>
-            </div>
-            <div class="date">
-                <div class="dateText"></div>
+                <div class="date">
+                    <div class="dateText"></div>
+                </div>
             </div>
         </header>
     
@@ -143,23 +146,30 @@
                 </section>
                 <section class="qna-content">
                     Q1. What is "House the weather"? <br><br>
-                    A1.  "House the weather" means "How's the weather"! <br>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This is kind of a pun! haha!
+                    A1. "House the weather" means "How's the weather"! <br>
+                    This is kind of a pun! HaHa!
+                </section>
+                <br><br>
+                <section class="qna-content">
+                    Q2. The region name on the website is different from <br>
+                    the current region one.<br><br>
+                    A2. If your area and the area displayed <br>
+                    on the website are different, press the GPS button.
                 </section>
             </article>
         </div>
     </footer>
     
 
-    <script src="./javascript/airAPI.js"></script>
-    <script src="./javascript/backImg.js"></script>
-    <script src="./javascript/uvIndex.js"></script>
-    <script src="./javascript/icon.js"></script>
-    <script src="./javascript/date.js"></script>
-    <script src="./javascript/backgroundColor.js"></script>
-    <script src="./javascript/locationAPI.js"></script>
-    <script src="./javascript/homeAPI.js"></script>
-    <script src="./javascript/geoHome.js"></script>
+    <script type="text/javascript" src="./javascript/airAPI.js"></script>
+    <script type="text/javascript" src="./javascript/backImg.js"></script>
+    <script type="text/javascript" src="./javascript/uvIndex.js"></script>
+    <script type="text/javascript" src="./javascript/icon.js"></script>
+    <script type="text/javascript" src="./javascript/date.js"></script>
+    <script type="text/javascript" src="./javascript/backgroundColor.js"></script>
+    <script type="text/javascript" src="./javascript/locationAPI.js"></script>
+    <script type="text/javascript" src="./javascript/homeAPI.js"></script>
+    <script type="text/javascript" src="./javascript/geoHome.js"></script>
     
     
 </body>

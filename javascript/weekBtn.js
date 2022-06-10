@@ -12,13 +12,11 @@ left.addEventListener("click",()=>{
         left.style.visibility = "hidden";
         weekIndex--;
         geoWeek(weekIndex);
-        console.log(weekIndex)
     }else{
         left.style.visibility = "visible";
         right.style.visibility = "visible";
         weekIndex--;
         geoWeek(weekIndex);
-        console.log(weekIndex)
     }
 
 });
@@ -29,13 +27,11 @@ right.addEventListener("click",function(){
         right.style.visibility = "hidden";
         weekIndex++;
         geoWeek(weekIndex);
-        console.log(weekIndex)
     }else{
         left.style.visibility = "visible";
         right.style.visibility = "visible";
         weekIndex++;
         geoWeek(weekIndex);
-        console.log(weekIndex)
     }   
 });
 

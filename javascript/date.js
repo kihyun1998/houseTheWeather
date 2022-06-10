@@ -53,23 +53,19 @@ function timeChange(time){
     return hour+":00";
 }
 
-//경보,특보 시 사용되는 시간
-function timeSpRpt(time){
+//차트에서 사용하는 시간
+function weekTime(time){
     let date = new Date(time*1000);
     let mon = date.getMonth()+1;
     let day = date.getDate();
-    let hour = date.getHours();
     if(mon < 10){
         mon = '0'+mon
     }
     if(day < 10){
         day = '0'+day
     }
-    if(hour < 10){
-        hour = '0'+hour
-    }
 
-    return `${mon}-${day} ${hour}:00`;
+    return `${mon}-${day}`;
 }
 
 //일출 일몰 시간값 출력
