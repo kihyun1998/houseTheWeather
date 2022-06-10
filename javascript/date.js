@@ -84,7 +84,6 @@ function setWeek(cName,i){
     //날짜 데이터 받아오기
     let now = new Date();
     now.setSeconds(now.getSeconds()+i);
-    console.log(now)
     const year = now.getFullYear();
     const mon = now.getMonth();
     const date = now.getDate();

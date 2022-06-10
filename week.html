@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="./style/public.css">
     <link rel="stylesheet" href="./style/week.css">
     <link rel="stylesheet" href="./style/mediaP.css">
+    <link rel="stylesheet" href="./style/mediaS.css">
+    <link rel="stylesheet" href="./style/mediaW.css">
     <title>House The Weather</title>
     <script src="https://cdn.jsdelivr.net/npm/chart.js@3.5.1/dist/chart.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/chartjs-plugin-datalabels/2.0.0/chartjs-plugin-datalabels.min.js"></script>
@@ -31,8 +33,31 @@
                 </li>
             </ul>
         </div>
+        <div id="show">
+            <button id="btn-show">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+        <div id="close">
+            <button id="btn-close">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+        </div>
     </nav>
     <div id="FRAME">
+        <div class="little-menu">
+            <ul class="mainMenu">
+                <li class="today">
+                    <a href="./today.html">Today</a>
+                </li>
+                <li class="chart">
+                    <a href="./chart.html">Chart</a>
+                </li>    
+                <li class="week">
+                    <a href="./week.html">Week</a>
+                </li>
+            </ul>
+        </div>
         <header id="head">
             <div class="space"></div>
             <div class="gps">
@@ -150,7 +175,6 @@
     <script type="text/javascript" src="./javascript/weekAPI.js"></script>
     <script type="text/javascript" src="./javascript/geoWeek.js"></script>
     <script type="text/javascript" src="./javascript/weekBtn.js"></script>
-    
-    
+    <script type="text/javascript" src="./javascript/media.js"></script>
 </body>
 </html>

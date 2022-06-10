@@ -27,3 +27,8 @@ v1.0.0 Only use "Today" Tap
 v1.1.0 Add Week Tap's functions
        (modified button,temp,date)
        (and remove air pollution function) > due to functional problems
+
+v1.2.0 Add Media Query (UI changes below width 800px)
+       Add map.html (Now we can get coordinates to the map.)
+       Some maintenance
+        

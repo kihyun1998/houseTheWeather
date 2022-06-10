@@ -1,13 +1,3 @@
-#header{
-    min-width: 50em;
-}
-#main{
-    min-width: 50em;
-}
-#map{
-    width: 100%;
-    height: 34em;
-}
 #coord-frame{
     display: flex;
     flex-direction: column;
@@ -15,20 +5,9 @@
     align-items: center;
     height: 7em;
 }
-#coord-head{
-    font-size: 3em;
-    font-weight: 700;
-}
-#coord-msg{
-    font-size: 1.5em;
-    font-weight: 600;
-}
 #coord-footer{
-    height: 4em;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    font-weight: 600;
-    font-size: 1.5em;
     text-align: center;
 }

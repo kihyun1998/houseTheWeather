@@ -1,0 +1,85 @@
+@media all 
+and (max-width: 800px){
+    #head{
+        max-width: 30em;
+    }
+    .gps > img {
+        height: 2.3em;
+        width: 2em;
+    }
+    .location{
+        padding-top: 0.2em;
+        font-size: 1em;
+        font-weight: 700;
+    }
+    /*날씨 아이템(온도)*/
+    .temp{
+        font-size: 4em;
+    }
+    /*날씨 아이템(이름)*/
+    .weatherName{
+        font-size: 2em;
+        text-align: left;
+        padding-left: 0.5em;
+    }
+    /*max&min*/
+    .mxmn{
+        font-size: 1em;
+        font-weight: 600;
+    }
+    /*feels like*/
+    .fl{
+        font-size: 1em;
+        font-weight: 600;
+    }
+    /*<main>start*/
+    #mainIndex{
+        width: 30em;
+    }
+    .text{
+        font-size: 1em;
+    }
+}
+@media all 
+and (min-width: 801px){
+    #head{
+        max-width: 55em;
+    }
+    .gps > img {
+        height: 3.5em;
+        width: 3em;
+    }
+    .location{
+        padding-top: 0.5em;
+        font-size: 1.3em;
+        font-weight: 700;
+    }
+    /*날씨 아이템(온도)*/
+    .temp{
+        font-size: 7em;
+    }
+    /*날씨 아이템(이름)*/
+    .weatherName{
+        font-size: 3.5em;
+        text-align: left;
+        padding-left: 0.5em;
+    }
+    /*max&min*/
+    .mxmn{
+        font-size: 1.5em;
+        font-weight: 600;
+    }
+    /*feels like*/
+    .fl{
+        font-size: 1.5em;
+        font-weight: 600;
+    }
+
+    /*<main>start*/
+    #mainIndex{
+        width: 55em;
+    }
+    .text{
+        font-size: 1.5em;
+    }
+}   

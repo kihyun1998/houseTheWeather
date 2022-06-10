@@ -1,4 +1,5 @@
 #FRAME{
+    position: relative;
     max-width: 65em;
     width: 100%;
     margin: 0 auto;
@@ -9,27 +10,16 @@
 #head{
     margin: 0.5em auto;
     font-weight: 500;
-    max-width: 55em;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 #FrameH{
-    /* border-radius: 10px; */
     min-width: 9em;
 }
 .gps{
     display: flex;
     justify-content: flex-end;
-}
-.gps > img {
-    height: 3.5em;
-    width: 3em;
-}
-.location{
-    padding-top: 0.5em;
-    font-size: 1.3em;
-    font-weight: 700;
 }
 .weather{
     margin: 0.5em auto;
@@ -51,33 +41,14 @@
     width: 48%;
     height: 100%;
 }
-/*날씨 아이템(온도)*/
-.temp{
-    font-size: 7em;
-
-}
-/*날씨 아이템(이름)*/
-.weatherName{
-    font-size: 3.5em;
-    text-align: left;
-    padding-left: 0.5em;
-    width: 20em;
-}
 .mxmn{
     display: flex;
     justify-content: flex-end;
-    font-size: 1.5em;
-    font-weight: 600;
 }
 .fl{
     display: flex;
     justify-content: flex-end;
-    font-size: 1.5em;
-    font-weight: 600;
 }
-
-/*날짜*/
-
 /*header부분 끝*/
 
 /*main 시작*/
@@ -86,7 +57,6 @@
     display: flex;
     flex-direction: column;
     max-height: 500em;
-    width: 55em;
 }
 .FrameI{
     margin: 1em auto;
@@ -98,7 +68,6 @@
 }
 .text{
     display:flex;
-    font-size: 1.5em;
     justify-content: space-around;
     text-align: center;
 }

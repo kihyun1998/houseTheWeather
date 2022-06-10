@@ -31,9 +31,11 @@ kakao.maps.event.addListener(map, 'click', function(mouseEvent) {
     marker.setPosition(latlng);
     msg.innerText = "The coordinate settings are complete.";
     
-    let lati = latlng.getLat();
-    let long = latlng.getLng()
+    let latit = latlng.getLat();
+    let longi = latlng.getLng()
 
+    let lati = latit.toFixed(7);
+    let long = longi.toFixed(7);
     window.localStorage.setItem('lat',lati)
     window.localStorage.setItem('lon',long)
     apiLoc(lati,long);

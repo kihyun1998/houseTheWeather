@@ -1,0 +1,57 @@
+@media all 
+and (max-width: 800px){
+    .max-temp{
+        font-size: 3em;
+    }
+    .min-temp{
+        font-size: 3em;
+    }
+    .tempText{
+        font-size: 1em;
+    }
+    .button{
+        width: 28em;
+    }
+    .btnF{
+        width: 12em;
+        height: 2.5em;
+    }
+    .left,.right{
+        width: 2.3em;
+        height: 1.3em;
+        font-size: 1em;
+    }
+    .btn-text{
+        font-size: 0.9em;
+        font-weight: 600;
+    }
+}
+
+@media all 
+and (min-width: 801px){
+    .max-temp{
+        font-size: 5.5em;
+    }
+    .min-temp{
+        font-size: 5.5em;
+    }
+    .tempText{
+        font-size: 2.7em;
+    }
+    .button{
+        width: 52em;
+    }
+    .btnF{
+        width: 20em;
+        height: 3em;
+    }
+    .left,.right{
+        width: 4em;
+        height: 2em;
+        font-size: 1em;
+    }
+    .btn-text{
+        font-size: 1em;
+        font-weight: 600;
+    }
+}
