@@ -3,11 +3,6 @@ and (max-width:800px){
     .space{
         height: 1em;
     }
-    #footer{
-        height: 25vh;
-        font-size: 0.8em;
-        min-width: 30em;
-    }
     #show{
         display: flex;
         justify-content: center;
@@ -86,25 +81,32 @@ and (max-width:800px){
     .week{
         width: 80vw;
         height: 2em;
-    }   
+    }
     a:link{
         color: white;
     }
     a:visited{
         color: white;
     }
+    
     /*날짜*/
     .date{
         font-size: 1em;
+    }
+    #footer{
+        min-height: 25vh;
+        font-size: 0.7em;
+        min-width: 30em;
+    }
+    .qna-title{
+        font-size: 1.5em;
+        font-weight: 700;
     }
 }
 @media all 
 and (min-width: 801px){
     .space{
         height: 6vh;
-    }
-    #footer{
-        min-width: 30em;
     }
     #nav{
         min-height: 3em;
@@ -197,5 +199,12 @@ and (min-width: 801px){
     /*날짜*/
     .date{
         font-size: 1.5em;
+    }
+    #footer{
+        min-width: 30em;
+    }
+    .qna-title{
+        font-size: 2em;
+        font-weight: 700;
     }
 }

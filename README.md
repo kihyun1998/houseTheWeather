@@ -39,4 +39,9 @@
        ➕ Add Media Query. (UI changes below width 800px)  
        ➕ Add map.html. (Now we can get coordinates to the map.)  
        ➕ Some maintenance.  
+  
+### :triangular_flag_on_post: v1.2.1  
+       ➕ Fix the Media Query  
+       ➕ Add Rainfall & SnowFall Value in Week Tap
+ 
         

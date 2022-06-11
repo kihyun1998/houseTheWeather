@@ -210,8 +210,8 @@ function apiGraph(lat,lon){
                     //채우기
                     fill: 'start',
                     //line 색
-                    borderColor: 'rgb(230, 111, 111)',
-                    backgroundColor: 'rgba(228, 173, 173,0.4)',
+                    borderColor: 'rgb(40, 40, 250)',
+                    backgroundColor: 'rgba(118, 118, 255,0.4)',
                     //line 두깨
                     borderWidth: 3,
                     //값 표현
@@ -266,7 +266,7 @@ function apiGraph(lat,lon){
         });
 
         //강우 chart JS 영역
-        chartRain=[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
+        chartRain= new Array(25).fill(0);
         for(var i=0; i<26; i++){
             try{
                 let rainVal = data.hourly[i].rain['1h'];
@@ -296,8 +296,8 @@ function apiGraph(lat,lon){
                     // y축 값 (강수량)
                     data: chartRain,
                     //line 색
-                    borderColor: 'rgb(255, 254, 176)',
-                    backgroundColor: 'rgb(255, 254, 176)',
+                    borderColor: 'rgb(83, 79, 79)',
+                    backgroundColor: 'rgb(83, 79, 79)',
                     //line 두깨
                     borderWidth: 3,
                     //값 표현
@@ -354,7 +354,7 @@ function apiGraph(lat,lon){
         });
 
         //강설 chart JS 영역
-        chartSnow=[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
+        chartSnow=new Array(25).fill(0);
         for(var i=0; i<26; i++){
             try{
                 let snowVal = data.hourly[i].snow['1h'];

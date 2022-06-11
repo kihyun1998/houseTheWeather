@@ -1,29 +1,31 @@
 @media all 
 and (max-width: 800px){
     .max-temp{
-        font-size: 3em;
+        font-size: 2.5em;
     }
     .min-temp{
-        font-size: 3em;
+        font-size: 2.5em;
     }
     .tempText{
-        font-size: 1em;
+        font-size: 0.8em;
     }
     .button{
-        width: 28em;
+        width: 95%;
     }
     .btnF{
-        width: 12em;
-        height: 2.5em;
+        width: 30%;
+        height: 2.3em;
     }
     .left,.right{
-        width: 2.3em;
-        height: 1.3em;
-        font-size: 1em;
+        width: 30%;
+        max-width: 3em;
+        height: 40%;
+        font-size: 0.8em;
     }
     .btn-text{
-        font-size: 0.9em;
+        font-size: 0.5em;
         font-weight: 600;
+        text-align: center;
     }
 }
 
@@ -39,10 +41,10 @@ and (min-width: 801px){
         font-size: 2.7em;
     }
     .button{
-        width: 52em;
+        width: 95%;
     }
     .btnF{
-        width: 20em;
+        width: 45%;
         height: 3em;
     }
     .left,.right{
