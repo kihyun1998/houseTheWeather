@@ -259,7 +259,7 @@ function apiGraph(lat,lon){
                             display:false,
                         },
                         //y축 최대값 설정
-                        max:maxMax+3
+                        max:maxMax+2
                     }
                 }
             }
@@ -277,7 +277,7 @@ function apiGraph(lat,lon){
         }
         chartRain.push(chartRain[24]);
         chartRain.unshift(chartRain[0]);
-
+        const maxRain = Math.max.apply(null,chartRain);
 
         //차트 지역 연동
         let rainChart = document.getElementById('myChart2').getContext('2d');
@@ -348,6 +348,7 @@ function apiGraph(lat,lon){
                             display:false,
                         },
                         //y축 최대값 설정
+                        max:maxRain+maxRain/5+0.1
                     }
                 }
             }
@@ -365,7 +366,7 @@ function apiGraph(lat,lon){
         }
         chartSnow.push(chartSnow[24]);
         chartSnow.unshift(chartSnow[0]);
-
+        const maxSnow = Math.max.apply(null,chartSnow);
 
 
         //차트 지역 연동
@@ -437,6 +438,7 @@ function apiGraph(lat,lon){
                             display:false,
                         },
                         //y축 최대값 설정
+                        max:maxSnow+maxSnow/5+0.1
                     }
                 }
             }
