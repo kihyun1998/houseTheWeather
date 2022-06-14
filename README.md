@@ -25,6 +25,8 @@
        ➕ Add New Index Page.  
        ➕ Change functions and UI.  
        ➕ Add Background Image.  
+       ➕ Add Strong-Wind special report
+       ➕ Use Air pollustion API and add it.
 
 ### :triangular_flag_on_post: v1.0.0  
        ➕ Only use "Today" Tap.  
