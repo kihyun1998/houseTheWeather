@@ -1,6 +1,9 @@
 # houseTheWeather
 #### See your location's weather
-
+  
+  
+#### 🚀Air Pollution API isn't working in GitHub page!!!  
+  
 ##### Link : <a href="https://kihyun1998.github.io/houseTheWeather/index.html">Here we go</a>
 
 ### :triangular_flag_on_post: v0.9.1  
