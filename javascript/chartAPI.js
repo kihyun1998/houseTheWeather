@@ -216,7 +216,7 @@ function apiGraph(lat,lon){
                     borderWidth: 3,
                     //값 표현
                     datalabels:{
-                        align:'top',
+                        align:'bottom',
                         formatter:function(value,context){
                             let idx=context.dataIndex;
                             if(idx==0 || idx==9){
@@ -523,7 +523,7 @@ function apiairChart(lat,lon){
                             return chartAirP[idx]+"mm";
                         },
                         color:'rgb(85, 81, 81)',
-                        font:{size:17,weight:'bold'},
+                        font:{size:15,weight:'bold'},
                         fill:true,
                     },
                 },
@@ -540,7 +540,7 @@ function apiairChart(lat,lon){
                     borderWidth: 3,
                     //값 표현
                     datalabels:{
-                        align:'top',
+                        align:'bottom',
                         formatter:function(value,context){
                             let idx=context.dataIndex;
                             if(idx==0 || idx==26){
@@ -587,7 +587,7 @@ function apiairChart(lat,lon){
                             display:false,
                         },
                         //y축 최대값 설정
-                        max:maxV+2
+                        max:maxV+maxV/5+0.1
                     }
                 }
             }
