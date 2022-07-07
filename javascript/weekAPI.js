@@ -67,5 +67,21 @@ function apiWeek(lat,lon,i){
         //습도
         const humidity=document.getElementsByClassName('humidity')[0];
         humidity.innerText = `${data.daily[i].humidity} %`;
+
+        //강우량
+        const rainF = document.getElementById("rainF");
+        let rainV = data.daily[i].rain
+        if(rainV == undefined){
+            rainV = 0;
+        }
+        rainF.innerText = `${rainV} mm`;
+
+        //강설량
+        const snowF = document.getElementById("snowF");
+        let snowV = data.daily[i].snow;
+        if(snowV == undefined){
+            snowV = 0;
+        }
+        snowF.innerText = `${snowV} mm`;
     })
 }

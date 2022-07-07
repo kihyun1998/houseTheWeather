@@ -26,7 +26,7 @@ function background(status){
             return "rgba(246, 219, 185, 0.9)";
             break;
         case "Haze":
-            return "rgba(159, 142, 163, 0.9)";
+            return "rgba(217, 232, 238,0.9)";
             break;
         case "Dust":
             return "rgba(228, 200, 129, 0.9)";
@@ -78,7 +78,7 @@ function frameColor(status){
             return "rgb(247, 233, 217)";
             break;
         case "Haze":
-            return "rgb(206, 192, 209)";
+            return "rgb(235, 249, 255)";
             break;
         case "Dust":
             return "rgb(231, 214, 169)";

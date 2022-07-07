@@ -210,13 +210,13 @@ function apiGraph(lat,lon){
                     //채우기
                     fill: 'start',
                     //line 색
-                    borderColor: 'rgb(230, 111, 111)',
-                    backgroundColor: 'rgba(228, 173, 173,0.4)',
+                    borderColor: 'rgb(40, 40, 250)',
+                    backgroundColor: 'rgba(118, 118, 255,0.4)',
                     //line 두깨
                     borderWidth: 3,
                     //값 표현
                     datalabels:{
-                        align:'top',
+                        align:'bottom',
                         formatter:function(value,context){
                             let idx=context.dataIndex;
                             if(idx==0 || idx==9){
@@ -259,14 +259,14 @@ function apiGraph(lat,lon){
                             display:false,
                         },
                         //y축 최대값 설정
-                        max:maxMax+3
+                        max:maxMax+2
                     }
                 }
             }
         });
 
         //강우 chart JS 영역
-        chartRain=[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
+        chartRain= new Array(25).fill(0);
         for(var i=0; i<26; i++){
             try{
                 let rainVal = data.hourly[i].rain['1h'];
@@ -277,7 +277,7 @@ function apiGraph(lat,lon){
         }
         chartRain.push(chartRain[24]);
         chartRain.unshift(chartRain[0]);
-
+        const maxRain = Math.max.apply(null,chartRain);
 
         //차트 지역 연동
         let rainChart = document.getElementById('myChart2').getContext('2d');
@@ -296,8 +296,8 @@ function apiGraph(lat,lon){
                     // y축 값 (강수량)
                     data: chartRain,
                     //line 색
-                    borderColor: 'rgb(255, 254, 176)',
-                    backgroundColor: 'rgb(255, 254, 176)',
+                    borderColor: 'rgb(83, 79, 79)',
+                    backgroundColor: 'rgb(83, 79, 79)',
                     //line 두깨
                     borderWidth: 3,
                     //값 표현
@@ -348,13 +348,14 @@ function apiGraph(lat,lon){
                             display:false,
                         },
                         //y축 최대값 설정
+                        max:maxRain+maxRain/5+0.1
                     }
                 }
             }
         });
 
         //강설 chart JS 영역
-        chartSnow=[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
+        chartSnow=new Array(25).fill(0);
         for(var i=0; i<26; i++){
             try{
                 let snowVal = data.hourly[i].snow['1h'];
@@ -365,7 +366,7 @@ function apiGraph(lat,lon){
         }
         chartSnow.push(chartSnow[24]);
         chartSnow.unshift(chartSnow[0]);
-
+        const maxSnow = Math.max.apply(null,chartSnow);
 
 
         //차트 지역 연동
@@ -437,6 +438,7 @@ function apiGraph(lat,lon){
                             display:false,
                         },
                         //y축 최대값 설정
+                        max:maxSnow+maxSnow/5+0.1
                     }
                 }
             }
@@ -521,7 +523,7 @@ function apiairChart(lat,lon){
                             return chartAirP[idx]+"mm";
                         },
                         color:'rgb(85, 81, 81)',
-                        font:{size:17,weight:'bold'},
+                        font:{size:15,weight:'bold'},
                         fill:true,
                     },
                 },
@@ -538,7 +540,7 @@ function apiairChart(lat,lon){
                     borderWidth: 3,
                     //값 표현
                     datalabels:{
-                        align:'top',
+                        align:'bottom',
                         formatter:function(value,context){
                             let idx=context.dataIndex;
                             if(idx==0 || idx==26){
@@ -585,7 +587,7 @@ function apiairChart(lat,lon){
                             display:false,
                         },
                         //y축 최대값 설정
-                        max:maxV+2
+                        max:maxV+maxV/5+0.1
                     }
                 }
             }
