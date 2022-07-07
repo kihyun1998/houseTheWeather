@@ -2,10 +2,11 @@
 /*웹 폰트 사용*/
 @import url('https://fonts.googleapis.com/css2?family=Coiny&family=Dongle&family=Gothic+A1&family=Hahmlet&family=Montserrat+Alternates&family=Press+Start+2P&family=Source+Code+Pro:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Coiny&family=Dongle&family=Gothic+A1&family=Hahmlet&family=Montserrat+Alternates&family=Open+Sans:wght@370&family=Press+Start+2P&family=Source+Code+Pro:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Indie+Flower&display=swap');
 /*전체설정*/
 *{
     margin: 0;
-    font-family: 'Montserrat Alternates','Open Sans', sans-serif;
+    font-family: 'Montserrat Alternates','Open Sans','Gloria Hallelujah', sans-serif;
     -ms-user-select: none; 
     -moz-user-select: -moz-none;
     -khtml-user-select: none;

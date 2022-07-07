@@ -56,6 +56,7 @@
     justify-content: center;
     color: aliceblue;
     background-color:rgba(49,59,70,0.9);
+    padding-left: 1em;
 }
 .main-des > div{
     margin: 0.1em 0.5em;
